@@ -1,0 +1,1347 @@
+{
+  "contractName": "IERC721LazyMint",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "approved",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Approval",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "approved",
+          "type": "bool"
+        }
+      ],
+      "name": "ApprovalForAll",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address payable",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "internalType": "uint96",
+              "name": "value",
+              "type": "uint96"
+            }
+          ],
+          "indexed": false,
+          "internalType": "struct LibPart.Part[]",
+          "name": "creators",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "Creators",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "approve",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "balance",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getApproved",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "isApprovedForAll",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "ownerOf",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "safeTransferFrom",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "safeTransferFrom",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "_approved",
+          "type": "bool"
+        }
+      ],
+      "name": "setApprovalForAll",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "interfaceId",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferFrom",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "tokenURI",
+              "type": "string"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "address payable",
+                  "name": "account",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "value",
+                  "type": "uint96"
+                }
+              ],
+              "internalType": "struct LibPart.Part[]",
+              "name": "creators",
+              "type": "tuple[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "address payable",
+                  "name": "account",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "value",
+                  "type": "uint96"
+                }
+              ],
+              "internalType": "struct LibPart.Part[]",
+              "name": "royalties",
+              "type": "tuple[]"
+            },
+            {
+              "internalType": "bytes[]",
+              "name": "signatures",
+              "type": "bytes[]"
+            }
+          ],
+          "internalType": "struct LibERC721LazyMint.Mint721Data",
+          "name": "data",
+          "type": "tuple"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "mintAndTransfer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "tokenURI",
+              "type": "string"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "address payable",
+                  "name": "account",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "value",
+                  "type": "uint96"
+                }
+              ],
+              "internalType": "struct LibPart.Part[]",
+              "name": "creators",
+              "type": "tuple[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "address payable",
+                  "name": "account",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint96",
+                  "name": "value",
+                  "type": "uint96"
+                }
+              ],
+              "internalType": "struct LibPart.Part[]",
+              "name": "royalties",
+              "type": "tuple[]"
+            },
+            {
+              "internalType": "bytes[]",
+              "name": "signatures",
+              "type": "bytes[]"
+            }
+          ],
+          "internalType": "struct LibERC721LazyMint.Mint721Data",
+          "name": "data",
+          "type": "tuple"
+        },
+        {
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "transferFromOrMint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"approved\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"address payable\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint96\",\"name\":\"value\",\"type\":\"uint96\"}],\"indexed\":false,\"internalType\":\"struct LibPart.Part[]\",\"name\":\"creators\",\"type\":\"tuple[]\"}],\"name\":\"Creators\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"balance\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getApproved\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"tokenURI\",\"type\":\"string\"},{\"components\":[{\"internalType\":\"address payable\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint96\",\"name\":\"value\",\"type\":\"uint96\"}],\"internalType\":\"struct LibPart.Part[]\",\"name\":\"creators\",\"type\":\"tuple[]\"},{\"components\":[{\"internalType\":\"address payable\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint96\",\"name\":\"value\",\"type\":\"uint96\"}],\"internalType\":\"struct LibPart.Part[]\",\"name\":\"royalties\",\"type\":\"tuple[]\"},{\"internalType\":\"bytes[]\",\"name\":\"signatures\",\"type\":\"bytes[]\"}],\"internalType\":\"struct LibERC721LazyMint.Mint721Data\",\"name\":\"data\",\"type\":\"tuple\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"}],\"name\":\"mintAndTransfer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"_approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"tokenURI\",\"type\":\"string\"},{\"components\":[{\"internalType\":\"address payable\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint96\",\"name\":\"value\",\"type\":\"uint96\"}],\"internalType\":\"struct LibPart.Part[]\",\"name\":\"creators\",\"type\":\"tuple[]\"},{\"components\":[{\"internalType\":\"address payable\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint96\",\"name\":\"value\",\"type\":\"uint96\"}],\"internalType\":\"struct LibPart.Part[]\",\"name\":\"royalties\",\"type\":\"tuple[]\"},{\"internalType\":\"bytes[]\",\"name\":\"signatures\",\"type\":\"bytes[]\"}],\"internalType\":\"struct LibERC721LazyMint.Mint721Data\",\"name\":\"data\",\"type\":\"tuple\"},{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"}],\"name\":\"transferFromOrMint\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"approve(address,uint256)\":{\"details\":\"Gives permission to `to` to transfer `tokenId` token to another account. The approval is cleared when the token is transferred. Only a single account can be approved at a time, so approving the zero address clears previous approvals. Requirements: - The caller must own the token or be an approved operator. - `tokenId` must exist. Emits an {Approval} event.\"},\"balanceOf(address)\":{\"details\":\"Returns the number of tokens in ``owner``'s account.\"},\"getApproved(uint256)\":{\"details\":\"Returns the account approved for `tokenId` token. Requirements: - `tokenId` must exist.\"},\"isApprovedForAll(address,address)\":{\"details\":\"Returns if the `operator` is allowed to manage all of the assets of `owner`. See {setApprovalForAll}\"},\"ownerOf(uint256)\":{\"details\":\"Returns the owner of the `tokenId` token. Requirements: - `tokenId` must exist.\"},\"safeTransferFrom(address,address,uint256)\":{\"details\":\"Safely transfers `tokenId` token from `from` to `to`, checking first that contract recipients are aware of the ERC721 protocol to prevent tokens from being forever locked. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be have been allowed to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer. Emits a {Transfer} event.\"},\"safeTransferFrom(address,address,uint256,bytes)\":{\"details\":\"Safely transfers `tokenId` token from `from` to `to`. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer. Emits a {Transfer} event.\"},\"setApprovalForAll(address,bool)\":{\"details\":\"Approve or remove `operator` as an operator for the caller. Operators can call {transferFrom} or {safeTransferFrom} for any token owned by the caller. Requirements: - The `operator` cannot be the caller. Emits an {ApprovalForAll} event.\"},\"supportsInterface(bytes4)\":{\"details\":\"Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas.\"},\"transferFrom(address,address,uint256)\":{\"details\":\"Transfers `tokenId` token from `from` to `to`. WARNING: Usage of this method is discouraged, use {safeTransferFrom} whenever possible. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}. Emits a {Transfer} event.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/erc-721/IERC721LazyMint.sol\":\"IERC721LazyMint\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts-upgradeable/introspection/IERC165Upgradeable.sol\":{\"keccak256\":\"0x4784c3f8a520a739dd25d76f514833a653990902d0e21601aed45bda44c87524\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://359411cc44a4499f37d46562ef3f348db443f9a699138c1797264d20b14697b7\",\"dweb:/ipfs/QmUmeQNUwve4MFCc1ace6zMnstqa8S9SZe1nXG9THcpQ5v\"]},\"@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol\":{\"keccak256\":\"0x3dab19bb4a63bcbda1ee153ca291694f92f9009fad28626126b15a8503b0e5ff\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ecc8ae8f1f85e11b6f749e147ac298d1d66879f3bfe3d4518b919f7b6151a73b\",\"dweb:/ipfs/QmYXZfcnCd1N1AaxUTfNQjNHJXAAfVGvae6Bte1SfTCKEz\"]},\"@rarible/lib-part/contracts/LibPart.sol\":{\"keccak256\":\"0xd0123f7411573a6a7e1527e0d3901913d7642e504ff240d5b7c5b76a28587def\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://447b449f7f986ecfdea10cbc96ae276877102866353b4f8410fec0bdb357d5ae\",\"dweb:/ipfs/QmatbYwMc1UXCGGH1D9fvgLbLPNdgzBVafYW84B1nJJiRr\"]},\"project:/contracts/erc-721/IERC721LazyMint.sol\":{\"keccak256\":\"0x52f0934084889c5245fdd3c56d01e5613e687b415669133e12eb104513a00a31\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://dec2af4e211921bad1be1f3c3645beaa15f104744a3bb20f96a464e77b1fa77d\",\"dweb:/ipfs/QmYhSitqg2qw2UhGA48YrYRkFWUB8EJfgSUhtvtHiqAt1W\"]},\"project:/contracts/erc-721/LibERC721LazyMint.sol\":{\"keccak256\":\"0x83a0ee2c37690e1234fda9d562ef0be4947f0036618336a102ffd062931bffe3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ab252bdd6d93bb96eb507848a2db25c3df4127fa1c60d1998ba707445d4861e5\",\"dweb:/ipfs/QmbspnFGoy5Up7dBsL87QawSRoFa41AerPHmELu9xE1T6B\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.6.2 <0.8.0;\npragma abicoder v2;\n\nimport \"@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol\";\nimport \"./LibERC721LazyMint.sol\";\nimport \"@rarible/lib-part/contracts/LibPart.sol\";\n\ninterface IERC721LazyMint is IERC721Upgradeable {\n\n    event Creators(\n        uint256 tokenId,\n        LibPart.Part[] creators\n    );\n\n    function mintAndTransfer(\n        LibERC721LazyMint.Mint721Data memory data,\n        address to\n    ) external;\n\n    function transferFromOrMint(\n        LibERC721LazyMint.Mint721Data memory data,\n        address from,\n        address to\n    ) external;\n}\n",
+  "sourcePath": "/Users/quintin/Desktop/protocol-contracts/lazy-mint/contracts/erc-721/IERC721LazyMint.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/erc-721/IERC721LazyMint.sol",
+    "exportedSymbols": {
+      "IERC165Upgradeable": [
+        11
+      ],
+      "IERC721LazyMint": [
+        540
+      ],
+      "IERC721Upgradeable": [
+        249
+      ],
+      "LibERC721LazyMint": [
+        688
+      ],
+      "LibPart": [
+        281
+      ]
+    },
+    "id": 541,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 510,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".2",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:31:7"
+      },
+      {
+        "id": 511,
+        "literals": [
+          "abicoder",
+          "v2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "65:19:7"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol",
+        "file": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol",
+        "id": 512,
+        "nodeType": "ImportDirective",
+        "scope": 541,
+        "sourceUnit": 250,
+        "src": "86:81:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/erc-721/LibERC721LazyMint.sol",
+        "file": "./LibERC721LazyMint.sol",
+        "id": 513,
+        "nodeType": "ImportDirective",
+        "scope": 541,
+        "sourceUnit": 689,
+        "src": "168:33:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@rarible/lib-part/contracts/LibPart.sol",
+        "file": "@rarible/lib-part/contracts/LibPart.sol",
+        "id": 514,
+        "nodeType": "ImportDirective",
+        "scope": 541,
+        "sourceUnit": 282,
+        "src": "202:49:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 515,
+              "name": "IERC721Upgradeable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 249,
+              "src": "282:18:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IERC721Upgradeable_$249",
+                "typeString": "contract IERC721Upgradeable"
+              }
+            },
+            "id": 516,
+            "nodeType": "InheritanceSpecifier",
+            "src": "282:18:7"
+          }
+        ],
+        "contractDependencies": [
+          11,
+          249
+        ],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 540,
+        "linearizedBaseContracts": [
+          540,
+          249,
+          11
+        ],
+        "name": "IERC721LazyMint",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "id": 523,
+            "name": "Creators",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 522,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 518,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 523,
+                  "src": "332:15:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 517,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "332:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 521,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "creators",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 523,
+                  "src": "357:23:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Part_$261_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct LibPart.Part[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 519,
+                      "name": "LibPart.Part",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 261,
+                      "src": "357:12:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Part_$261_storage_ptr",
+                        "typeString": "struct LibPart.Part"
+                      }
+                    },
+                    "id": 520,
+                    "nodeType": "ArrayTypeName",
+                    "src": "357:14:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Part_$261_storage_$dyn_storage_ptr",
+                      "typeString": "struct LibPart.Part[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "322:64:7"
+            },
+            "src": "308:79:7"
+          },
+          {
+            "functionSelector": "22a775b6",
+            "id": 530,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mintAndTransfer",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 528,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 525,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 530,
+                  "src": "427:41:7",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Mint721Data_$568_memory_ptr",
+                    "typeString": "struct LibERC721LazyMint.Mint721Data"
+                  },
+                  "typeName": {
+                    "id": 524,
+                    "name": "LibERC721LazyMint.Mint721Data",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 568,
+                    "src": "427:29:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Mint721Data_$568_storage_ptr",
+                      "typeString": "struct LibERC721LazyMint.Mint721Data"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 527,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 530,
+                  "src": "478:10:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 526,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "478:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "417:77:7"
+            },
+            "returnParameters": {
+              "id": 529,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "503:0:7"
+            },
+            "scope": 540,
+            "src": "393:111:7",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "832fbb29",
+            "id": 539,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transferFromOrMint",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 537,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 532,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 539,
+                  "src": "547:41:7",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Mint721Data_$568_memory_ptr",
+                    "typeString": "struct LibERC721LazyMint.Mint721Data"
+                  },
+                  "typeName": {
+                    "id": 531,
+                    "name": "LibERC721LazyMint.Mint721Data",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 568,
+                    "src": "547:29:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Mint721Data_$568_storage_ptr",
+                      "typeString": "struct LibERC721LazyMint.Mint721Data"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 534,
+                  "mutability": "mutable",
+                  "name": "from",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 539,
+                  "src": "598:12:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 533,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "598:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 536,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 539,
+                  "src": "620:10:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 535,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "620:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "537:99:7"
+            },
+            "returnParameters": {
+              "id": 538,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "645:0:7"
+            },
+            "scope": 540,
+            "src": "510:136:7",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 541,
+        "src": "253:395:7"
+      }
+    ],
+    "src": "33:616:7"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/erc-721/IERC721LazyMint.sol",
+      "exportedSymbols": {
+        "IERC165Upgradeable": [
+          11
+        ],
+        "IERC721LazyMint": [
+          540
+        ],
+        "IERC721Upgradeable": [
+          249
+        ],
+        "LibERC721LazyMint": [
+          688
+        ],
+        "LibPart": [
+          281
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.6",
+            ".2",
+            "<",
+            "0.8",
+            ".0"
+          ]
+        },
+        "id": 510,
+        "name": "PragmaDirective",
+        "src": "33:31:7"
+      },
+      {
+        "attributes": {
+          "literals": [
+            "abicoder",
+            "v2"
+          ]
+        },
+        "id": 511,
+        "name": "PragmaDirective",
+        "src": "65:19:7"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 250,
+          "absolutePath": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol",
+          "file": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol",
+          "scope": 541,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 512,
+        "name": "ImportDirective",
+        "src": "86:81:7"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 689,
+          "absolutePath": "project:/contracts/erc-721/LibERC721LazyMint.sol",
+          "file": "./LibERC721LazyMint.sol",
+          "scope": 541,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 513,
+        "name": "ImportDirective",
+        "src": "168:33:7"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 282,
+          "absolutePath": "@rarible/lib-part/contracts/LibPart.sol",
+          "file": "@rarible/lib-part/contracts/LibPart.sol",
+          "scope": 541,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 514,
+        "name": "ImportDirective",
+        "src": "202:49:7"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "contractDependencies": [
+            11,
+            249
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            540,
+            249,
+            11
+          ],
+          "name": "IERC721LazyMint",
+          "scope": 541
+        },
+        "children": [
+          {
+            "attributes": {},
+            "children": [
+              {
+                "attributes": {
+                  "name": "IERC721Upgradeable",
+                  "referencedDeclaration": 249,
+                  "type": "contract IERC721Upgradeable"
+                },
+                "id": 515,
+                "name": "UserDefinedTypeName",
+                "src": "282:18:7"
+              }
+            ],
+            "id": 516,
+            "name": "InheritanceSpecifier",
+            "src": "282:18:7"
+          },
+          {
+            "attributes": {
+              "anonymous": false,
+              "name": "Creators"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "tokenId",
+                      "scope": 523,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 517,
+                        "name": "ElementaryTypeName",
+                        "src": "332:7:7"
+                      }
+                    ],
+                    "id": 518,
+                    "name": "VariableDeclaration",
+                    "src": "332:15:7"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "creators",
+                      "scope": 523,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "struct LibPart.Part[]",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "type": "struct LibPart.Part[]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "LibPart.Part",
+                              "referencedDeclaration": 261,
+                              "type": "struct LibPart.Part"
+                            },
+                            "id": 519,
+                            "name": "UserDefinedTypeName",
+                            "src": "357:12:7"
+                          }
+                        ],
+                        "id": 520,
+                        "name": "ArrayTypeName",
+                        "src": "357:14:7"
+                      }
+                    ],
+                    "id": 521,
+                    "name": "VariableDeclaration",
+                    "src": "357:23:7"
+                  }
+                ],
+                "id": 522,
+                "name": "ParameterList",
+                "src": "322:64:7"
+              }
+            ],
+            "id": 523,
+            "name": "EventDefinition",
+            "src": "308:79:7"
+          },
+          {
+            "attributes": {
+              "functionSelector": "22a775b6",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "mintAndTransfer",
+              "scope": 540,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "data",
+                      "scope": 530,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "struct LibERC721LazyMint.Mint721Data",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "LibERC721LazyMint.Mint721Data",
+                          "referencedDeclaration": 568,
+                          "type": "struct LibERC721LazyMint.Mint721Data"
+                        },
+                        "id": 524,
+                        "name": "UserDefinedTypeName",
+                        "src": "427:29:7"
+                      }
+                    ],
+                    "id": 525,
+                    "name": "VariableDeclaration",
+                    "src": "427:41:7"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "to",
+                      "scope": 530,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 526,
+                        "name": "ElementaryTypeName",
+                        "src": "478:7:7"
+                      }
+                    ],
+                    "id": 527,
+                    "name": "VariableDeclaration",
+                    "src": "478:10:7"
+                  }
+                ],
+                "id": 528,
+                "name": "ParameterList",
+                "src": "417:77:7"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 529,
+                "name": "ParameterList",
+                "src": "503:0:7"
+              }
+            ],
+            "id": 530,
+            "name": "FunctionDefinition",
+            "src": "393:111:7"
+          },
+          {
+            "attributes": {
+              "functionSelector": "832fbb29",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "transferFromOrMint",
+              "scope": 540,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "data",
+                      "scope": 539,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "struct LibERC721LazyMint.Mint721Data",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "LibERC721LazyMint.Mint721Data",
+                          "referencedDeclaration": 568,
+                          "type": "struct LibERC721LazyMint.Mint721Data"
+                        },
+                        "id": 531,
+                        "name": "UserDefinedTypeName",
+                        "src": "547:29:7"
+                      }
+                    ],
+                    "id": 532,
+                    "name": "VariableDeclaration",
+                    "src": "547:41:7"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "from",
+                      "scope": 539,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 533,
+                        "name": "ElementaryTypeName",
+                        "src": "598:7:7"
+                      }
+                    ],
+                    "id": 534,
+                    "name": "VariableDeclaration",
+                    "src": "598:12:7"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "to",
+                      "scope": 539,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 535,
+                        "name": "ElementaryTypeName",
+                        "src": "620:7:7"
+                      }
+                    ],
+                    "id": 536,
+                    "name": "VariableDeclaration",
+                    "src": "620:10:7"
+                  }
+                ],
+                "id": 537,
+                "name": "ParameterList",
+                "src": "537:99:7"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 538,
+                "name": "ParameterList",
+                "src": "645:0:7"
+              }
+            ],
+            "id": 539,
+            "name": "FunctionDefinition",
+            "src": "510:136:7"
+          }
+        ],
+        "id": 540,
+        "name": "ContractDefinition",
+        "src": "253:395:7"
+      }
+    ],
+    "id": 541,
+    "name": "SourceUnit",
+    "src": "33:616:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.8",
+  "updatedAt": "2022-08-04T19:36:37.682Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "approve(address,uint256)": {
+        "details": "Gives permission to `to` to transfer `tokenId` token to another account. The approval is cleared when the token is transferred. Only a single account can be approved at a time, so approving the zero address clears previous approvals. Requirements: - The caller must own the token or be an approved operator. - `tokenId` must exist. Emits an {Approval} event."
+      },
+      "balanceOf(address)": {
+        "details": "Returns the number of tokens in ``owner``'s account."
+      },
+      "getApproved(uint256)": {
+        "details": "Returns the account approved for `tokenId` token. Requirements: - `tokenId` must exist."
+      },
+      "isApprovedForAll(address,address)": {
+        "details": "Returns if the `operator` is allowed to manage all of the assets of `owner`. See {setApprovalForAll}"
+      },
+      "ownerOf(uint256)": {
+        "details": "Returns the owner of the `tokenId` token. Requirements: - `tokenId` must exist."
+      },
+      "safeTransferFrom(address,address,uint256)": {
+        "details": "Safely transfers `tokenId` token from `from` to `to`, checking first that contract recipients are aware of the ERC721 protocol to prevent tokens from being forever locked. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be have been allowed to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer. Emits a {Transfer} event."
+      },
+      "safeTransferFrom(address,address,uint256,bytes)": {
+        "details": "Safely transfers `tokenId` token from `from` to `to`. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer. Emits a {Transfer} event."
+      },
+      "setApprovalForAll(address,bool)": {
+        "details": "Approve or remove `operator` as an operator for the caller. Operators can call {transferFrom} or {safeTransferFrom} for any token owned by the caller. Requirements: - The `operator` cannot be the caller. Emits an {ApprovalForAll} event."
+      },
+      "supportsInterface(bytes4)": {
+        "details": "Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas."
+      },
+      "transferFrom(address,address,uint256)": {
+        "details": "Transfers `tokenId` token from `from` to `to`. WARNING: Usage of this method is discouraged, use {safeTransferFrom} whenever possible. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}. Emits a {Transfer} event."
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

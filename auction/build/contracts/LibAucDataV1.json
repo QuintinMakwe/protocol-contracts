@@ -15,41 +15,41 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"V1\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"library that works with data field of Auction struct\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/libs/LibAucDataV1.sol\":\"LibAucDataV1\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/libs/LibAucDataV1.sol\":{\"keccak256\":\"0xb57d0ad0f3e6b1adde86eec91bbe0859a89bee703f1cb721821fef4885a19b4a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8ec8731059c92d0d63c7a4c9c08ae66fa76696a489a627280d74294573799821\",\"dweb:/ipfs/QmYgspGLKnsBF87ssGnQZpxy6aKZX6DqMb8NWS7spGTw6j\"]}},\"version\":1}",
-  "bytecode": "0x60c1610025600b82828239805160001a60731461001857fe5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060335760003560e01c80633ee569bf146038575b600080fd5b603e6052565b604051604991906076565b60405180910390f35b7f4c23426613a5dc69e08fbd2787e6210aa679d4522e95a89d4dd88c4fd13a228381565b6001600160e01b03199190911681526020019056fea26469706673582212203b2e6a8ae40a54546ad34f1e42532df118f328514036af5516479c5bde2282f264736f6c63430007060033",
-  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361060335760003560e01c80633ee569bf146038575b600080fd5b603e6052565b604051604991906076565b60405180910390f35b7f4c23426613a5dc69e08fbd2787e6210aa679d4522e95a89d4dd88c4fd13a228381565b6001600160e01b03199190911681526020019056fea26469706673582212203b2e6a8ae40a54546ad34f1e42532df118f328514036af5516479c5bde2282f264736f6c63430007060033",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"V1\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"library that works with data field of Auction struct\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/quintin/Desktop/protocol-contracts/auction/contracts/libs/LibAucDataV1.sol\":\"LibAucDataV1\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/quintin/Desktop/protocol-contracts/auction/contracts/libs/LibAucDataV1.sol\":{\"keccak256\":\"0x5398291ca3179506ce999230ba2a659377b5168ee7e14cc9eb916f39839499fb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1e9e1c2f19eef6c494d88de9d268f60739a42a53080127f1a4290ce1953b2bec\",\"dweb:/ipfs/QmR67E3aRecy4TaT7SiG7T2S9XXWTbEQq95ivPhrBfX5L9\"]}},\"version\":1}",
+  "bytecode": "0x60c1610025600b82828239805160001a60731461001857fe5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060335760003560e01c80633ee569bf146038575b600080fd5b603e6052565b604051604991906076565b60405180910390f35b7f4c23426613a5dc69e08fbd2787e6210aa679d4522e95a89d4dd88c4fd13a228381565b6001600160e01b03199190911681526020019056fea2646970667358221220676fc85c8cf275ff5deb608620d84655fb078d97aafedcf66fb08df2e1bb250064736f6c63430007060033",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361060335760003560e01c80633ee569bf146038575b600080fd5b603e6052565b604051604991906076565b60405180910390f35b7f4c23426613a5dc69e08fbd2787e6210aa679d4522e95a89d4dd88c4fd13a228381565b6001600160e01b03199190911681526020019056fea2646970667358221220676fc85c8cf275ff5deb608620d84655fb078d97aafedcf66fb08df2e1bb250064736f6c63430007060033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [
     {
       "ast": {
         "nodeType": "YulBlock",
-        "src": "0:226:52",
+        "src": "0:226:44",
         "statements": [
           {
             "nodeType": "YulBlock",
-            "src": "6:3:52",
+            "src": "6:3:44",
             "statements": []
           },
           {
             "body": {
               "nodeType": "YulBlock",
-              "src": "121:103:52",
+              "src": "121:103:44",
               "statements": [
                 {
                   "nodeType": "YulAssignment",
-                  "src": "131:26:52",
+                  "src": "131:26:44",
                   "value": {
                     "arguments": [
                       {
                         "name": "headStart",
                         "nodeType": "YulIdentifier",
-                        "src": "143:9:52"
+                        "src": "143:9:44"
                       },
                       {
                         "kind": "number",
                         "nodeType": "YulLiteral",
-                        "src": "154:2:52",
+                        "src": "154:2:44",
                         "type": "",
                         "value": "32"
                       }
@@ -57,16 +57,16 @@
                     "functionName": {
                       "name": "add",
                       "nodeType": "YulIdentifier",
-                      "src": "139:3:52"
+                      "src": "139:3:44"
                     },
                     "nodeType": "YulFunctionCall",
-                    "src": "139:18:52"
+                    "src": "139:18:44"
                   },
                   "variableNames": [
                     {
                       "name": "tail",
                       "nodeType": "YulIdentifier",
-                      "src": "131:4:52"
+                      "src": "131:4:44"
                     }
                   ]
                 },
@@ -76,28 +76,28 @@
                       {
                         "name": "headStart",
                         "nodeType": "YulIdentifier",
-                        "src": "173:9:52"
+                        "src": "173:9:44"
                       },
                       {
                         "arguments": [
                           {
                             "name": "value0",
                             "nodeType": "YulIdentifier",
-                            "src": "188:6:52"
+                            "src": "188:6:44"
                           },
                           {
                             "arguments": [
                               {
                                 "kind": "number",
                                 "nodeType": "YulLiteral",
-                                "src": "200:3:52",
+                                "src": "200:3:44",
                                 "type": "",
                                 "value": "224"
                               },
                               {
                                 "kind": "number",
                                 "nodeType": "YulLiteral",
-                                "src": "205:10:52",
+                                "src": "205:10:44",
                                 "type": "",
                                 "value": "0xffffffff"
                               }
@@ -105,31 +105,31 @@
                             "functionName": {
                               "name": "shl",
                               "nodeType": "YulIdentifier",
-                              "src": "196:3:52"
+                              "src": "196:3:44"
                             },
                             "nodeType": "YulFunctionCall",
-                            "src": "196:20:52"
+                            "src": "196:20:44"
                           }
                         ],
                         "functionName": {
                           "name": "and",
                           "nodeType": "YulIdentifier",
-                          "src": "184:3:52"
+                          "src": "184:3:44"
                         },
                         "nodeType": "YulFunctionCall",
-                        "src": "184:33:52"
+                        "src": "184:33:44"
                       }
                     ],
                     "functionName": {
                       "name": "mstore",
                       "nodeType": "YulIdentifier",
-                      "src": "166:6:52"
+                      "src": "166:6:44"
                     },
                     "nodeType": "YulFunctionCall",
-                    "src": "166:52:52"
+                    "src": "166:52:44"
                   },
                   "nodeType": "YulExpressionStatement",
-                  "src": "166:52:52"
+                  "src": "166:52:44"
                 }
               ]
             },
@@ -139,13 +139,13 @@
               {
                 "name": "headStart",
                 "nodeType": "YulTypedName",
-                "src": "90:9:52",
+                "src": "90:9:44",
                 "type": ""
               },
               {
                 "name": "value0",
                 "nodeType": "YulTypedName",
-                "src": "101:6:52",
+                "src": "101:6:44",
                 "type": ""
               }
             ],
@@ -153,53 +153,53 @@
               {
                 "name": "tail",
                 "nodeType": "YulTypedName",
-                "src": "112:4:52",
+                "src": "112:4:44",
                 "type": ""
               }
             ],
-            "src": "14:210:52"
+            "src": "14:210:44"
           }
         ]
       },
       "contents": "{\n    { }\n    function abi_encode_tuple_t_bytes4__to_t_bytes4__fromStack_library_reversed(headStart, value0) -> tail\n    {\n        tail := add(headStart, 32)\n        mstore(headStart, and(value0, shl(224, 0xffffffff)))\n    }\n}",
-      "id": 52,
+      "id": 44,
       "language": "Yul",
       "name": "#utility.yul"
     }
   ],
-  "sourceMap": "139:772:47:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "139:772:47:-:0;;;;;;;;;;;;;;;;;;;;;;;;166:51;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;201:15;166:51;:::o;14:210:52:-;-1:-1:-1;;;;;;184:33:52;;;;166:52;;154:2;139:18;;121:103::o",
-  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.7.6;\npragma abicoder v2;\n\n/// @dev library that works with data field of Auction struct\nlibrary LibAucDataV1 {\n    bytes4 constant public V1 = bytes4(keccak256(\"V1\"));\n\n    /// @dev struct of Auction data field, version 1\n    struct DataV1 {\n        // auction originFees\n        uint originFee;\n        // auction duration\n        uint duration;\n        // auction startTime\n        uint startTime;\n        // auction buyout price\n        uint buyOutPrice;\n    }\n\n    /// @dev returns parsed data field of an Auction (so returns DataV1 struct)\n    function parse(bytes memory data, bytes4 dataType) internal pure returns (DataV1 memory aucData) {\n        if (dataType == V1) {\n            if (data.length > 0){\n                aucData = abi.decode(data, (DataV1));\n            }\n        } else {\n            revert(\"wrong auction dataType\");\n        }\n    }\n}\n\n",
-  "sourcePath": "/Users/ds/Documents/rarible/protocol-contracts/auction/contracts/libs/LibAucDataV1.sol",
+  "sourceMap": "139:778:6:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "139:778:6:-:0;;;;;;;;;;;;;;;;;;;;;;;;166:51;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;201:15;166:51;:::o;14:210:44:-;-1:-1:-1;;;;;;184:33:44;;;;166:52;;154:2;139:18;;121:103::o",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.7.6;\npragma abicoder v2;\n\n/// @dev library that works with data field of Auction struct\nlibrary LibAucDataV1 {\n    bytes4 constant public V1 = bytes4(keccak256(\"V1\"));\n\n    /// @dev struct of Auction data field, version 1\n    struct DataV1 {\n        // auction originFees\n        uint originFee;\n        // auction duration\n        uint96 duration;\n        // auction startTime\n        uint96 startTime;\n        // auction buyout price\n        uint96 buyOutPrice;\n    }\n\n    /// @dev returns parsed data field of an Auction (so returns DataV1 struct)\n    function parse(bytes memory data, bytes4 dataType) internal pure returns (DataV1 memory aucData) {\n        if (dataType == V1) {\n            if (data.length > 0){\n                aucData = abi.decode(data, (DataV1));\n            }\n        } else {\n            revert(\"wrong auction dataType\");\n        }\n    }\n}\n\n",
+  "sourcePath": "/Users/quintin/Desktop/protocol-contracts/auction/contracts/libs/LibAucDataV1.sol",
   "ast": {
-    "absolutePath": "project:/contracts/libs/LibAucDataV1.sol",
+    "absolutePath": "/Users/quintin/Desktop/protocol-contracts/auction/contracts/libs/LibAucDataV1.sol",
     "exportedSymbols": {
       "LibAucDataV1": [
-        8085
+        2997
       ]
     },
-    "id": 8086,
+    "id": 2998,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 8029,
+        "id": 2941,
         "literals": [
           "solidity",
           "0.7",
           ".6"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:22:47"
+        "src": "33:22:6"
       },
       {
-        "id": 8030,
+        "id": 2942,
         "literals": [
           "abicoder",
           "v2"
         ],
         "nodeType": "PragmaDirective",
-        "src": "56:19:47"
+        "src": "56:19:6"
       },
       {
         "abstract": false,
@@ -207,15 +207,15 @@
         "contractDependencies": [],
         "contractKind": "library",
         "documentation": {
-          "id": 8031,
+          "id": 2943,
           "nodeType": "StructuredDocumentation",
-          "src": "77:62:47",
+          "src": "77:62:6",
           "text": "@dev library that works with data field of Auction struct"
         },
         "fullyImplemented": true,
-        "id": 8085,
+        "id": 2997,
         "linearizedBaseContracts": [
-          8085
+          2997
         ],
         "name": "LibAucDataV1",
         "nodeType": "ContractDefinition",
@@ -223,12 +223,12 @@
           {
             "constant": true,
             "functionSelector": "3ee569bf",
-            "id": 8039,
+            "id": 2951,
             "mutability": "constant",
             "name": "V1",
             "nodeType": "VariableDeclaration",
-            "scope": 8085,
-            "src": "166:51:47",
+            "scope": 2997,
+            "src": "166:51:6",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -236,10 +236,10 @@
               "typeString": "bytes4"
             },
             "typeName": {
-              "id": 8032,
+              "id": 2944,
               "name": "bytes4",
               "nodeType": "ElementaryTypeName",
-              "src": "166:6:47",
+              "src": "166:6:6",
               "typeDescriptions": {
                 "typeIdentifier": "t_bytes4",
                 "typeString": "bytes4"
@@ -251,14 +251,14 @@
                   "arguments": [
                     {
                       "hexValue": "5631",
-                      "id": 8036,
+                      "id": 2948,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "string",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "211:4:47",
+                      "src": "211:4:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_stringliteral_4c23426613a5dc69e08fbd2787e6210aa679d4522e95a89d4dd88c4fd13a2283",
                         "typeString": "literal_string \"V1\""
@@ -273,18 +273,18 @@
                         "typeString": "literal_string \"V1\""
                       }
                     ],
-                    "id": 8035,
+                    "id": 2947,
                     "name": "keccak256",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 4294967288,
-                    "src": "201:9:47",
+                    "src": "201:9:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
                       "typeString": "function (bytes memory) pure returns (bytes32)"
                     }
                   },
-                  "id": 8037,
+                  "id": 2949,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -292,7 +292,7 @@
                   "lValueRequested": false,
                   "names": [],
                   "nodeType": "FunctionCall",
-                  "src": "201:15:47",
+                  "src": "201:15:6",
                   "tryCall": false,
                   "typeDescriptions": {
                     "typeIdentifier": "t_bytes32",
@@ -307,26 +307,26 @@
                     "typeString": "bytes32"
                   }
                 ],
-                "id": 8034,
+                "id": 2946,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "lValueRequested": false,
                 "nodeType": "ElementaryTypeNameExpression",
-                "src": "194:6:47",
+                "src": "194:6:6",
                 "typeDescriptions": {
                   "typeIdentifier": "t_type$_t_bytes4_$",
                   "typeString": "type(bytes4)"
                 },
                 "typeName": {
-                  "id": 8033,
+                  "id": 2945,
                   "name": "bytes4",
                   "nodeType": "ElementaryTypeName",
-                  "src": "194:6:47",
+                  "src": "194:6:6",
                   "typeDescriptions": {}
                 }
               },
-              "id": 8038,
+              "id": 2950,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -334,7 +334,7 @@
               "lValueRequested": false,
               "names": [],
               "nodeType": "FunctionCall",
-              "src": "194:23:47",
+              "src": "194:23:6",
               "tryCall": false,
               "typeDescriptions": {
                 "typeIdentifier": "t_bytes4",
@@ -345,16 +345,16 @@
           },
           {
             "canonicalName": "LibAucDataV1.DataV1",
-            "id": 8048,
+            "id": 2960,
             "members": [
               {
                 "constant": false,
-                "id": 8041,
+                "id": 2953,
                 "mutability": "mutable",
                 "name": "originFee",
                 "nodeType": "VariableDeclaration",
-                "scope": 8048,
-                "src": "331:14:47",
+                "scope": 2960,
+                "src": "331:14:6",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -362,10 +362,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 8040,
+                  "id": 2952,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
-                  "src": "331:4:47",
+                  "src": "331:4:6",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -375,78 +375,78 @@
               },
               {
                 "constant": false,
-                "id": 8043,
+                "id": 2955,
                 "mutability": "mutable",
                 "name": "duration",
                 "nodeType": "VariableDeclaration",
-                "scope": 8048,
-                "src": "383:13:47",
+                "scope": 2960,
+                "src": "383:15:6",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_uint256",
-                  "typeString": "uint256"
+                  "typeIdentifier": "t_uint96",
+                  "typeString": "uint96"
                 },
                 "typeName": {
-                  "id": 8042,
-                  "name": "uint",
+                  "id": 2954,
+                  "name": "uint96",
                   "nodeType": "ElementaryTypeName",
-                  "src": "383:4:47",
+                  "src": "383:6:6",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
+                    "typeIdentifier": "t_uint96",
+                    "typeString": "uint96"
                   }
                 },
                 "visibility": "internal"
               },
               {
                 "constant": false,
-                "id": 8045,
+                "id": 2957,
                 "mutability": "mutable",
                 "name": "startTime",
                 "nodeType": "VariableDeclaration",
-                "scope": 8048,
-                "src": "435:14:47",
+                "scope": 2960,
+                "src": "437:16:6",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_uint256",
-                  "typeString": "uint256"
+                  "typeIdentifier": "t_uint96",
+                  "typeString": "uint96"
                 },
                 "typeName": {
-                  "id": 8044,
-                  "name": "uint",
+                  "id": 2956,
+                  "name": "uint96",
                   "nodeType": "ElementaryTypeName",
-                  "src": "435:4:47",
+                  "src": "437:6:6",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
+                    "typeIdentifier": "t_uint96",
+                    "typeString": "uint96"
                   }
                 },
                 "visibility": "internal"
               },
               {
                 "constant": false,
-                "id": 8047,
+                "id": 2959,
                 "mutability": "mutable",
                 "name": "buyOutPrice",
                 "nodeType": "VariableDeclaration",
-                "scope": 8048,
-                "src": "491:16:47",
+                "scope": 2960,
+                "src": "495:18:6",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_uint256",
-                  "typeString": "uint256"
+                  "typeIdentifier": "t_uint96",
+                  "typeString": "uint96"
                 },
                 "typeName": {
-                  "id": 8046,
-                  "name": "uint",
+                  "id": 2958,
+                  "name": "uint96",
                   "nodeType": "ElementaryTypeName",
-                  "src": "491:4:47",
+                  "src": "495:6:6",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
+                    "typeIdentifier": "t_uint96",
+                    "typeString": "uint96"
                   }
                 },
                 "visibility": "internal"
@@ -454,15 +454,15 @@
             ],
             "name": "DataV1",
             "nodeType": "StructDefinition",
-            "scope": 8085,
-            "src": "277:237:47",
+            "scope": 2997,
+            "src": "277:243:6",
             "visibility": "public"
           },
           {
             "body": {
-              "id": 8083,
+              "id": 2995,
               "nodeType": "Block",
-              "src": "697:212:47",
+              "src": "703:212:6",
               "statements": [
                 {
                   "condition": {
@@ -470,18 +470,18 @@
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
                     },
-                    "id": 8060,
+                    "id": 2972,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 8058,
+                      "id": 2970,
                       "name": "dataType",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8053,
-                      "src": "711:8:47",
+                      "referencedDeclaration": 2965,
+                      "src": "717:8:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes4",
                         "typeString": "bytes4"
@@ -490,41 +490,41 @@
                     "nodeType": "BinaryOperation",
                     "operator": "==",
                     "rightExpression": {
-                      "id": 8059,
+                      "id": 2971,
                       "name": "V1",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8039,
-                      "src": "723:2:47",
+                      "referencedDeclaration": 2951,
+                      "src": "729:2:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes4",
                         "typeString": "bytes4"
                       }
                     },
-                    "src": "711:14:47",
+                    "src": "717:14:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
                   "falseBody": {
-                    "id": 8081,
+                    "id": 2993,
                     "nodeType": "Block",
-                    "src": "846:57:47",
+                    "src": "852:57:6",
                     "statements": [
                       {
                         "expression": {
                           "arguments": [
                             {
                               "hexValue": "77726f6e672061756374696f6e206461746154797065",
-                              "id": 8078,
+                              "id": 2990,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
                               "kind": "string",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "867:24:47",
+                              "src": "873:24:6",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_stringliteral_d59d2f1ca52d6c8e672885800d4260ab50ead9915f6c1d5acffcf444ee861c46",
                                 "typeString": "literal_string \"wrong auction dataType\""
@@ -539,7 +539,7 @@
                                 "typeString": "literal_string \"wrong auction dataType\""
                               }
                             ],
-                            "id": 8077,
+                            "id": 2989,
                             "name": "revert",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [
@@ -547,13 +547,13 @@
                               4294967277
                             ],
                             "referencedDeclaration": 4294967277,
-                            "src": "860:6:47",
+                            "src": "866:6:6",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_revert_pure$_t_string_memory_ptr_$returns$__$",
                               "typeString": "function (string memory) pure"
                             }
                           },
-                          "id": 8079,
+                          "id": 2991,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -561,26 +561,26 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "860:32:47",
+                          "src": "866:32:6",
                           "tryCall": false,
                           "typeDescriptions": {
                             "typeIdentifier": "t_tuple$__$",
                             "typeString": "tuple()"
                           }
                         },
-                        "id": 8080,
+                        "id": 2992,
                         "nodeType": "ExpressionStatement",
-                        "src": "860:32:47"
+                        "src": "866:32:6"
                       }
                     ]
                   },
-                  "id": 8082,
+                  "id": 2994,
                   "nodeType": "IfStatement",
-                  "src": "707:196:47",
+                  "src": "713:196:6",
                   "trueBody": {
-                    "id": 8076,
+                    "id": 2988,
                     "nodeType": "Block",
-                    "src": "727:113:47",
+                    "src": "733:113:6",
                     "statements": [
                       {
                         "condition": {
@@ -588,32 +588,32 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 8064,
+                          "id": 2976,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
                             "expression": {
-                              "id": 8061,
+                              "id": 2973,
                               "name": "data",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8051,
-                              "src": "745:4:47",
+                              "referencedDeclaration": 2963,
+                              "src": "751:4:6",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bytes_memory_ptr",
                                 "typeString": "bytes memory"
                               }
                             },
-                            "id": 8062,
+                            "id": 2974,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "length",
                             "nodeType": "MemberAccess",
-                            "src": "745:11:47",
+                            "src": "751:11:6",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -623,50 +623,50 @@
                           "operator": ">",
                           "rightExpression": {
                             "hexValue": "30",
-                            "id": 8063,
+                            "id": 2975,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "759:1:47",
+                            "src": "765:1:6",
                             "typeDescriptions": {
                               "typeIdentifier": "t_rational_0_by_1",
                               "typeString": "int_const 0"
                             },
                             "value": "0"
                           },
-                          "src": "745:15:47",
+                          "src": "751:15:6",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
                           }
                         },
-                        "id": 8075,
+                        "id": 2987,
                         "nodeType": "IfStatement",
-                        "src": "741:89:47",
+                        "src": "747:89:6",
                         "trueBody": {
-                          "id": 8074,
+                          "id": 2986,
                           "nodeType": "Block",
-                          "src": "761:69:47",
+                          "src": "767:69:6",
                           "statements": [
                             {
                               "expression": {
-                                "id": 8072,
+                                "id": 2984,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "leftHandSide": {
-                                  "id": 8065,
+                                  "id": 2977,
                                   "name": "aucData",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 8056,
-                                  "src": "779:7:47",
+                                  "referencedDeclaration": 2968,
+                                  "src": "785:7:6",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_DataV1_$8048_memory_ptr",
+                                    "typeIdentifier": "t_struct$_DataV1_$2960_memory_ptr",
                                     "typeString": "struct LibAucDataV1.DataV1 memory"
                                   }
                                 },
@@ -675,12 +675,12 @@
                                 "rightHandSide": {
                                   "arguments": [
                                     {
-                                      "id": 8068,
+                                      "id": 2980,
                                       "name": "data",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 8051,
-                                      "src": "800:4:47",
+                                      "referencedDeclaration": 2963,
+                                      "src": "806:4:6",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_bytes_memory_ptr",
                                         "typeString": "bytes memory"
@@ -689,28 +689,28 @@
                                     {
                                       "components": [
                                         {
-                                          "id": 8069,
+                                          "id": 2981,
                                           "name": "DataV1",
                                           "nodeType": "Identifier",
                                           "overloadedDeclarations": [],
-                                          "referencedDeclaration": 8048,
-                                          "src": "807:6:47",
+                                          "referencedDeclaration": 2960,
+                                          "src": "813:6:6",
                                           "typeDescriptions": {
-                                            "typeIdentifier": "t_type$_t_struct$_DataV1_$8048_storage_ptr_$",
+                                            "typeIdentifier": "t_type$_t_struct$_DataV1_$2960_storage_ptr_$",
                                             "typeString": "type(struct LibAucDataV1.DataV1 storage pointer)"
                                           }
                                         }
                                       ],
-                                      "id": 8070,
+                                      "id": 2982,
                                       "isConstant": false,
                                       "isInlineArray": false,
                                       "isLValue": false,
                                       "isPure": true,
                                       "lValueRequested": false,
                                       "nodeType": "TupleExpression",
-                                      "src": "806:8:47",
+                                      "src": "812:8:6",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_type$_t_struct$_DataV1_$8048_storage_ptr_$",
+                                        "typeIdentifier": "t_type$_t_struct$_DataV1_$2960_storage_ptr_$",
                                         "typeString": "type(struct LibAucDataV1.DataV1 storage pointer)"
                                       }
                                     }
@@ -722,36 +722,36 @@
                                         "typeString": "bytes memory"
                                       },
                                       {
-                                        "typeIdentifier": "t_type$_t_struct$_DataV1_$8048_storage_ptr_$",
+                                        "typeIdentifier": "t_type$_t_struct$_DataV1_$2960_storage_ptr_$",
                                         "typeString": "type(struct LibAucDataV1.DataV1 storage pointer)"
                                       }
                                     ],
                                     "expression": {
-                                      "id": 8066,
+                                      "id": 2978,
                                       "name": "abi",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
                                       "referencedDeclaration": 4294967295,
-                                      "src": "789:3:47",
+                                      "src": "795:3:6",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_magic_abi",
                                         "typeString": "abi"
                                       }
                                     },
-                                    "id": 8067,
+                                    "id": 2979,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
                                     "lValueRequested": false,
                                     "memberName": "decode",
                                     "nodeType": "MemberAccess",
-                                    "src": "789:10:47",
+                                    "src": "795:10:6",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_function_abidecode_pure$__$returns$__$",
                                       "typeString": "function () pure"
                                     }
                                   },
-                                  "id": 8071,
+                                  "id": 2983,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": false,
@@ -759,22 +759,22 @@
                                   "lValueRequested": false,
                                   "names": [],
                                   "nodeType": "FunctionCall",
-                                  "src": "789:26:47",
+                                  "src": "795:26:6",
                                   "tryCall": false,
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_DataV1_$8048_memory_ptr",
+                                    "typeIdentifier": "t_struct$_DataV1_$2960_memory_ptr",
                                     "typeString": "struct LibAucDataV1.DataV1 memory"
                                   }
                                 },
-                                "src": "779:36:47",
+                                "src": "785:36:6",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_DataV1_$8048_memory_ptr",
+                                  "typeIdentifier": "t_struct$_DataV1_$2960_memory_ptr",
                                   "typeString": "struct LibAucDataV1.DataV1 memory"
                                 }
                               },
-                              "id": 8073,
+                              "id": 2985,
                               "nodeType": "ExpressionStatement",
-                              "src": "779:36:47"
+                              "src": "785:36:6"
                             }
                           ]
                         }
@@ -785,29 +785,29 @@
               ]
             },
             "documentation": {
-              "id": 8049,
+              "id": 2961,
               "nodeType": "StructuredDocumentation",
-              "src": "520:75:47",
+              "src": "526:75:6",
               "text": "@dev returns parsed data field of an Auction (so returns DataV1 struct)"
             },
-            "id": 8084,
+            "id": 2996,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "parse",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8054,
+              "id": 2966,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8051,
+                  "id": 2963,
                   "mutability": "mutable",
                   "name": "data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8084,
-                  "src": "615:17:47",
+                  "scope": 2996,
+                  "src": "621:17:6",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -815,10 +815,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 8050,
+                    "id": 2962,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "615:5:47",
+                    "src": "621:5:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -828,12 +828,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 8053,
+                  "id": 2965,
                   "mutability": "mutable",
                   "name": "dataType",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8084,
-                  "src": "634:15:47",
+                  "scope": 2996,
+                  "src": "640:15:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -841,10 +841,10 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 8052,
+                    "id": 2964,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
-                    "src": "634:6:47",
+                    "src": "640:6:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
@@ -853,61 +853,61 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "614:36:47"
+              "src": "620:36:6"
             },
             "returnParameters": {
-              "id": 8057,
+              "id": 2969,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8056,
+                  "id": 2968,
                   "mutability": "mutable",
                   "name": "aucData",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8084,
-                  "src": "674:21:47",
+                  "scope": 2996,
+                  "src": "680:21:6",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_DataV1_$8048_memory_ptr",
+                    "typeIdentifier": "t_struct$_DataV1_$2960_memory_ptr",
                     "typeString": "struct LibAucDataV1.DataV1"
                   },
                   "typeName": {
-                    "id": 8055,
+                    "id": 2967,
                     "name": "DataV1",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 8048,
-                    "src": "674:6:47",
+                    "referencedDeclaration": 2960,
+                    "src": "680:6:6",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_DataV1_$8048_storage_ptr",
+                      "typeIdentifier": "t_struct$_DataV1_$2960_storage_ptr",
                       "typeString": "struct LibAucDataV1.DataV1"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "673:23:47"
+              "src": "679:23:6"
             },
-            "scope": 8085,
-            "src": "600:309:47",
+            "scope": 2997,
+            "src": "606:309:6",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 8086,
-        "src": "139:772:47"
+        "scope": 2998,
+        "src": "139:778:6"
       }
     ],
-    "src": "33:880:47"
+    "src": "33:886:6"
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "project:/contracts/libs/LibAucDataV1.sol",
+      "absolutePath": "/Users/quintin/Desktop/protocol-contracts/auction/contracts/libs/LibAucDataV1.sol",
       "exportedSymbols": {
         "LibAucDataV1": [
-          8085
+          2997
         ]
       },
       "license": "MIT"
@@ -921,9 +921,9 @@
             ".6"
           ]
         },
-        "id": 8029,
+        "id": 2941,
         "name": "PragmaDirective",
-        "src": "33:22:47"
+        "src": "33:22:6"
       },
       {
         "attributes": {
@@ -932,9 +932,9 @@
             "v2"
           ]
         },
-        "id": 8030,
+        "id": 2942,
         "name": "PragmaDirective",
-        "src": "56:19:47"
+        "src": "56:19:6"
       },
       {
         "attributes": {
@@ -948,19 +948,19 @@
           "contractKind": "library",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            8085
+            2997
           ],
           "name": "LibAucDataV1",
-          "scope": 8086
+          "scope": 2998
         },
         "children": [
           {
             "attributes": {
               "text": "@dev library that works with data field of Auction struct"
             },
-            "id": 8031,
+            "id": 2943,
             "name": "StructuredDocumentation",
-            "src": "77:62:47"
+            "src": "77:62:6"
           },
           {
             "attributes": {
@@ -968,7 +968,7 @@
               "functionSelector": "3ee569bf",
               "mutability": "constant",
               "name": "V1",
-              "scope": 8085,
+              "scope": 2997,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "bytes4",
@@ -980,9 +980,9 @@
                   "name": "bytes4",
                   "type": "bytes4"
                 },
-                "id": 8032,
+                "id": 2944,
                 "name": "ElementaryTypeName",
-                "src": "166:6:47"
+                "src": "166:6:6"
               },
               {
                 "attributes": {
@@ -1018,14 +1018,14 @@
                         "attributes": {
                           "name": "bytes4"
                         },
-                        "id": 8033,
+                        "id": 2945,
                         "name": "ElementaryTypeName",
-                        "src": "194:6:47"
+                        "src": "194:6:6"
                       }
                     ],
-                    "id": 8034,
+                    "id": 2946,
                     "name": "ElementaryTypeNameExpression",
-                    "src": "194:6:47"
+                    "src": "194:6:6"
                   },
                   {
                     "attributes": {
@@ -1057,9 +1057,9 @@
                           "type": "function (bytes memory) pure returns (bytes32)",
                           "value": "keccak256"
                         },
-                        "id": 8035,
+                        "id": 2947,
                         "name": "Identifier",
-                        "src": "201:9:47"
+                        "src": "201:9:6"
                       },
                       {
                         "attributes": {
@@ -1072,30 +1072,30 @@
                           "type": "literal_string \"V1\"",
                           "value": "V1"
                         },
-                        "id": 8036,
+                        "id": 2948,
                         "name": "Literal",
-                        "src": "211:4:47"
+                        "src": "211:4:6"
                       }
                     ],
-                    "id": 8037,
+                    "id": 2949,
                     "name": "FunctionCall",
-                    "src": "201:15:47"
+                    "src": "201:15:6"
                   }
                 ],
-                "id": 8038,
+                "id": 2950,
                 "name": "FunctionCall",
-                "src": "194:23:47"
+                "src": "194:23:6"
               }
             ],
-            "id": 8039,
+            "id": 2951,
             "name": "VariableDeclaration",
-            "src": "166:51:47"
+            "src": "166:51:6"
           },
           {
             "attributes": {
               "canonicalName": "LibAucDataV1.DataV1",
               "name": "DataV1",
-              "scope": 8085,
+              "scope": 2997,
               "visibility": "public"
             },
             "children": [
@@ -1104,7 +1104,7 @@
                   "constant": false,
                   "mutability": "mutable",
                   "name": "originFee",
-                  "scope": 8048,
+                  "scope": 2960,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -1116,97 +1116,97 @@
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 8040,
+                    "id": 2952,
                     "name": "ElementaryTypeName",
-                    "src": "331:4:47"
+                    "src": "331:4:6"
                   }
                 ],
-                "id": 8041,
+                "id": 2953,
                 "name": "VariableDeclaration",
-                "src": "331:14:47"
+                "src": "331:14:6"
               },
               {
                 "attributes": {
                   "constant": false,
                   "mutability": "mutable",
                   "name": "duration",
-                  "scope": 8048,
+                  "scope": 2960,
                   "stateVariable": false,
                   "storageLocation": "default",
-                  "type": "uint256",
+                  "type": "uint96",
                   "visibility": "internal"
                 },
                 "children": [
                   {
                     "attributes": {
-                      "name": "uint",
-                      "type": "uint256"
+                      "name": "uint96",
+                      "type": "uint96"
                     },
-                    "id": 8042,
+                    "id": 2954,
                     "name": "ElementaryTypeName",
-                    "src": "383:4:47"
+                    "src": "383:6:6"
                   }
                 ],
-                "id": 8043,
+                "id": 2955,
                 "name": "VariableDeclaration",
-                "src": "383:13:47"
+                "src": "383:15:6"
               },
               {
                 "attributes": {
                   "constant": false,
                   "mutability": "mutable",
                   "name": "startTime",
-                  "scope": 8048,
+                  "scope": 2960,
                   "stateVariable": false,
                   "storageLocation": "default",
-                  "type": "uint256",
+                  "type": "uint96",
                   "visibility": "internal"
                 },
                 "children": [
                   {
                     "attributes": {
-                      "name": "uint",
-                      "type": "uint256"
+                      "name": "uint96",
+                      "type": "uint96"
                     },
-                    "id": 8044,
+                    "id": 2956,
                     "name": "ElementaryTypeName",
-                    "src": "435:4:47"
+                    "src": "437:6:6"
                   }
                 ],
-                "id": 8045,
+                "id": 2957,
                 "name": "VariableDeclaration",
-                "src": "435:14:47"
+                "src": "437:16:6"
               },
               {
                 "attributes": {
                   "constant": false,
                   "mutability": "mutable",
                   "name": "buyOutPrice",
-                  "scope": 8048,
+                  "scope": 2960,
                   "stateVariable": false,
                   "storageLocation": "default",
-                  "type": "uint256",
+                  "type": "uint96",
                   "visibility": "internal"
                 },
                 "children": [
                   {
                     "attributes": {
-                      "name": "uint",
-                      "type": "uint256"
+                      "name": "uint96",
+                      "type": "uint96"
                     },
-                    "id": 8046,
+                    "id": 2958,
                     "name": "ElementaryTypeName",
-                    "src": "491:4:47"
+                    "src": "495:6:6"
                   }
                 ],
-                "id": 8047,
+                "id": 2959,
                 "name": "VariableDeclaration",
-                "src": "491:16:47"
+                "src": "495:18:6"
               }
             ],
-            "id": 8048,
+            "id": 2960,
             "name": "StructDefinition",
-            "src": "277:237:47"
+            "src": "277:243:6"
           },
           {
             "attributes": {
@@ -1217,7 +1217,7 @@
                 null
               ],
               "name": "parse",
-              "scope": 8085,
+              "scope": 2997,
               "stateMutability": "pure",
               "virtual": false,
               "visibility": "internal"
@@ -1227,9 +1227,9 @@
                 "attributes": {
                   "text": "@dev returns parsed data field of an Auction (so returns DataV1 struct)"
                 },
-                "id": 8049,
+                "id": 2961,
                 "name": "StructuredDocumentation",
-                "src": "520:75:47"
+                "src": "526:75:6"
               },
               {
                 "children": [
@@ -1238,7 +1238,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "data",
-                      "scope": 8084,
+                      "scope": 2996,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "bytes",
@@ -1250,21 +1250,21 @@
                           "name": "bytes",
                           "type": "bytes"
                         },
-                        "id": 8050,
+                        "id": 2962,
                         "name": "ElementaryTypeName",
-                        "src": "615:5:47"
+                        "src": "621:5:6"
                       }
                     ],
-                    "id": 8051,
+                    "id": 2963,
                     "name": "VariableDeclaration",
-                    "src": "615:17:47"
+                    "src": "621:17:6"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "mutability": "mutable",
                       "name": "dataType",
-                      "scope": 8084,
+                      "scope": 2996,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bytes4",
@@ -1276,19 +1276,19 @@
                           "name": "bytes4",
                           "type": "bytes4"
                         },
-                        "id": 8052,
+                        "id": 2964,
                         "name": "ElementaryTypeName",
-                        "src": "634:6:47"
+                        "src": "640:6:6"
                       }
                     ],
-                    "id": 8053,
+                    "id": 2965,
                     "name": "VariableDeclaration",
-                    "src": "634:15:47"
+                    "src": "640:15:6"
                   }
                 ],
-                "id": 8054,
+                "id": 2966,
                 "name": "ParameterList",
-                "src": "614:36:47"
+                "src": "620:36:6"
               },
               {
                 "children": [
@@ -1297,7 +1297,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "aucData",
-                      "scope": 8084,
+                      "scope": 2996,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "struct LibAucDataV1.DataV1",
@@ -1307,22 +1307,22 @@
                       {
                         "attributes": {
                           "name": "DataV1",
-                          "referencedDeclaration": 8048,
+                          "referencedDeclaration": 2960,
                           "type": "struct LibAucDataV1.DataV1"
                         },
-                        "id": 8055,
+                        "id": 2967,
                         "name": "UserDefinedTypeName",
-                        "src": "674:6:47"
+                        "src": "680:6:6"
                       }
                     ],
-                    "id": 8056,
+                    "id": 2968,
                     "name": "VariableDeclaration",
-                    "src": "674:21:47"
+                    "src": "680:21:6"
                   }
                 ],
-                "id": 8057,
+                "id": 2969,
                 "name": "ParameterList",
-                "src": "673:23:47"
+                "src": "679:23:6"
               },
               {
                 "children": [
@@ -1347,31 +1347,31 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 8053,
+                              "referencedDeclaration": 2965,
                               "type": "bytes4",
                               "value": "dataType"
                             },
-                            "id": 8058,
+                            "id": 2970,
                             "name": "Identifier",
-                            "src": "711:8:47"
+                            "src": "717:8:6"
                           },
                           {
                             "attributes": {
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 8039,
+                              "referencedDeclaration": 2951,
                               "type": "bytes4",
                               "value": "V1"
                             },
-                            "id": 8059,
+                            "id": 2971,
                             "name": "Identifier",
-                            "src": "723:2:47"
+                            "src": "729:2:6"
                           }
                         ],
-                        "id": 8060,
+                        "id": 2972,
                         "name": "BinaryOperation",
-                        "src": "711:14:47"
+                        "src": "717:14:6"
                       },
                       {
                         "children": [
@@ -1407,18 +1407,18 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 8051,
+                                          "referencedDeclaration": 2963,
                                           "type": "bytes memory",
                                           "value": "data"
                                         },
-                                        "id": 8061,
+                                        "id": 2973,
                                         "name": "Identifier",
-                                        "src": "745:4:47"
+                                        "src": "751:4:6"
                                       }
                                     ],
-                                    "id": 8062,
+                                    "id": 2974,
                                     "name": "MemberAccess",
-                                    "src": "745:11:47"
+                                    "src": "751:11:6"
                                   },
                                   {
                                     "attributes": {
@@ -1431,14 +1431,14 @@
                                       "type": "int_const 0",
                                       "value": "0"
                                     },
-                                    "id": 8063,
+                                    "id": 2975,
                                     "name": "Literal",
-                                    "src": "759:1:47"
+                                    "src": "765:1:6"
                                   }
                                 ],
-                                "id": 8064,
+                                "id": 2976,
                                 "name": "BinaryOperation",
-                                "src": "745:15:47"
+                                "src": "751:15:6"
                               },
                               {
                                 "children": [
@@ -1459,13 +1459,13 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 8056,
+                                              "referencedDeclaration": 2968,
                                               "type": "struct LibAucDataV1.DataV1 memory",
                                               "value": "aucData"
                                             },
-                                            "id": 8065,
+                                            "id": 2977,
                                             "name": "Identifier",
-                                            "src": "779:7:47"
+                                            "src": "785:7:6"
                                           },
                                           {
                                             "attributes": {
@@ -1490,7 +1490,7 @@
                                                       "typeString": "bytes memory"
                                                     },
                                                     {
-                                                      "typeIdentifier": "t_type$_t_struct$_DataV1_$8048_storage_ptr_$",
+                                                      "typeIdentifier": "t_type$_t_struct$_DataV1_$2960_storage_ptr_$",
                                                       "typeString": "type(struct LibAucDataV1.DataV1 storage pointer)"
                                                     }
                                                   ],
@@ -1511,27 +1511,27 @@
                                                       "type": "abi",
                                                       "value": "abi"
                                                     },
-                                                    "id": 8066,
+                                                    "id": 2978,
                                                     "name": "Identifier",
-                                                    "src": "789:3:47"
+                                                    "src": "795:3:6"
                                                   }
                                                 ],
-                                                "id": 8067,
+                                                "id": 2979,
                                                 "name": "MemberAccess",
-                                                "src": "789:10:47"
+                                                "src": "795:10:6"
                                               },
                                               {
                                                 "attributes": {
                                                   "overloadedDeclarations": [
                                                     null
                                                   ],
-                                                  "referencedDeclaration": 8051,
+                                                  "referencedDeclaration": 2963,
                                                   "type": "bytes memory",
                                                   "value": "data"
                                                 },
-                                                "id": 8068,
+                                                "id": 2980,
                                                 "name": "Identifier",
-                                                "src": "800:4:47"
+                                                "src": "806:4:6"
                                               },
                                               {
                                                 "attributes": {
@@ -1548,48 +1548,48 @@
                                                       "overloadedDeclarations": [
                                                         null
                                                       ],
-                                                      "referencedDeclaration": 8048,
+                                                      "referencedDeclaration": 2960,
                                                       "type": "type(struct LibAucDataV1.DataV1 storage pointer)",
                                                       "value": "DataV1"
                                                     },
-                                                    "id": 8069,
+                                                    "id": 2981,
                                                     "name": "Identifier",
-                                                    "src": "807:6:47"
+                                                    "src": "813:6:6"
                                                   }
                                                 ],
-                                                "id": 8070,
+                                                "id": 2982,
                                                 "name": "TupleExpression",
-                                                "src": "806:8:47"
+                                                "src": "812:8:6"
                                               }
                                             ],
-                                            "id": 8071,
+                                            "id": 2983,
                                             "name": "FunctionCall",
-                                            "src": "789:26:47"
+                                            "src": "795:26:6"
                                           }
                                         ],
-                                        "id": 8072,
+                                        "id": 2984,
                                         "name": "Assignment",
-                                        "src": "779:36:47"
+                                        "src": "785:36:6"
                                       }
                                     ],
-                                    "id": 8073,
+                                    "id": 2985,
                                     "name": "ExpressionStatement",
-                                    "src": "779:36:47"
+                                    "src": "785:36:6"
                                   }
                                 ],
-                                "id": 8074,
+                                "id": 2986,
                                 "name": "Block",
-                                "src": "761:69:47"
+                                "src": "767:69:6"
                               }
                             ],
-                            "id": 8075,
+                            "id": 2987,
                             "name": "IfStatement",
-                            "src": "741:89:47"
+                            "src": "747:89:6"
                           }
                         ],
-                        "id": 8076,
+                        "id": 2988,
                         "name": "Block",
-                        "src": "727:113:47"
+                        "src": "733:113:6"
                       },
                       {
                         "children": [
@@ -1626,9 +1626,9 @@
                                       "type": "function (string memory) pure",
                                       "value": "revert"
                                     },
-                                    "id": 8077,
+                                    "id": 2989,
                                     "name": "Identifier",
-                                    "src": "860:6:47"
+                                    "src": "866:6:6"
                                   },
                                   {
                                     "attributes": {
@@ -1641,57 +1641,57 @@
                                       "type": "literal_string \"wrong auction dataType\"",
                                       "value": "wrong auction dataType"
                                     },
-                                    "id": 8078,
+                                    "id": 2990,
                                     "name": "Literal",
-                                    "src": "867:24:47"
+                                    "src": "873:24:6"
                                   }
                                 ],
-                                "id": 8079,
+                                "id": 2991,
                                 "name": "FunctionCall",
-                                "src": "860:32:47"
+                                "src": "866:32:6"
                               }
                             ],
-                            "id": 8080,
+                            "id": 2992,
                             "name": "ExpressionStatement",
-                            "src": "860:32:47"
+                            "src": "866:32:6"
                           }
                         ],
-                        "id": 8081,
+                        "id": 2993,
                         "name": "Block",
-                        "src": "846:57:47"
+                        "src": "852:57:6"
                       }
                     ],
-                    "id": 8082,
+                    "id": 2994,
                     "name": "IfStatement",
-                    "src": "707:196:47"
+                    "src": "713:196:6"
                   }
                 ],
-                "id": 8083,
+                "id": 2995,
                 "name": "Block",
-                "src": "697:212:47"
+                "src": "703:212:6"
               }
             ],
-            "id": 8084,
+            "id": 2996,
             "name": "FunctionDefinition",
-            "src": "600:309:47"
+            "src": "606:309:6"
           }
         ],
-        "id": 8085,
+        "id": 2997,
         "name": "ContractDefinition",
-        "src": "139:772:47"
+        "src": "139:778:6"
       }
     ],
-    "id": 8086,
+    "id": 2998,
     "name": "SourceUnit",
-    "src": "33:880:47"
+    "src": "33:886:6"
   },
   "compiler": {
     "name": "solc",
     "version": "0.7.6+commit.7338295f.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.3",
-  "updatedAt": "2022-03-11T07:16:37.809Z",
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2022-08-04T07:15:50.593Z",
   "devdoc": {
     "details": "library that works with data field of Auction struct",
     "kind": "dev",

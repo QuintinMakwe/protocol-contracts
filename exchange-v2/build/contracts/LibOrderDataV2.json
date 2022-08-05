@@ -15,41 +15,41 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"V2\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@rarible/libraries/contracts/LibOrderDataV2.sol\":\"LibOrderDataV2\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@rarible/libraries/contracts/LibOrderDataV2.sol\":{\"keccak256\":\"0xcc8b13b41a326f960058f631af589bbd1403d3fe7608656ed350fbb04a813bc3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bd219e42b4a4671c7b15f712f7f47a86303ee1fa181a6cf7a1cf8a39d03aff76\",\"dweb:/ipfs/QmcJsPJnhSSdAzfjoTXUtffTgZEG9EhNuoFykfPYkDfemt\"]},\"@rarible/royalties/contracts/LibPart.sol\":{\"keccak256\":\"0xd0123f7411573a6a7e1527e0d3901913d7642e504ff240d5b7c5b76a28587def\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://447b449f7f986ecfdea10cbc96ae276877102866353b4f8410fec0bdb357d5ae\",\"dweb:/ipfs/QmatbYwMc1UXCGGH1D9fvgLbLPNdgzBVafYW84B1nJJiRr\"]}},\"version\":1}",
-  "bytecode": "0x60c1610025600b82828239805160001a60731461001857fe5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060335760003560e01c806396cd25ef146038575b600080fd5b603e6052565b604051604991906076565b60405180910390f35b7f23d235efaf569b2b407d10f447247743508d1762a8e3a3aed85ccc0570dde35f81565b6001600160e01b03199190911681526020019056fea2646970667358221220dc2741891848d681ad71fc03e1d1bbd54216df36fed5c8338581dfaa36ab037a64736f6c63430007060033",
-  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361060335760003560e01c806396cd25ef146038575b600080fd5b603e6052565b604051604991906076565b60405180910390f35b7f23d235efaf569b2b407d10f447247743508d1762a8e3a3aed85ccc0570dde35f81565b6001600160e01b03199190911681526020019056fea2646970667358221220dc2741891848d681ad71fc03e1d1bbd54216df36fed5c8338581dfaa36ab037a64736f6c63430007060033",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"V2\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/quintin/Desktop/protocol-contracts/exchange-v2/contracts/libraries/LibOrderDataV2.sol\":\"LibOrderDataV2\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/quintin/Desktop/protocol-contracts/exchange-v2/contracts/libraries/LibOrderDataV2.sol\":{\"keccak256\":\"0x4733b5f49b714086922f0fcc5a47c0a448476ddfeda13720c6cc746c08503c62\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b9c4d91cb8747e4cf0f286ff02294ff16ce5b1d7a3f66ae424094a0d390c483b\",\"dweb:/ipfs/QmbeFZcNMAqMc8mBtvKJHDHEdtifmjdSfATNMRR4KeMQn5\"]},\"@rarible/lib-part/contracts/LibPart.sol\":{\"keccak256\":\"0xd0123f7411573a6a7e1527e0d3901913d7642e504ff240d5b7c5b76a28587def\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://447b449f7f986ecfdea10cbc96ae276877102866353b4f8410fec0bdb357d5ae\",\"dweb:/ipfs/QmatbYwMc1UXCGGH1D9fvgLbLPNdgzBVafYW84B1nJJiRr\"]}},\"version\":1}",
+  "bytecode": "0x60c1610025600b82828239805160001a60731461001857fe5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060335760003560e01c806396cd25ef146038575b600080fd5b603e6052565b604051604991906076565b60405180910390f35b7f23d235efaf569b2b407d10f447247743508d1762a8e3a3aed85ccc0570dde35f81565b6001600160e01b03199190911681526020019056fea2646970667358221220a8c67aba10cf392bd1b8df52484755a83bf4560ed64e7f0645a9c6861857238364736f6c63430007060033",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361060335760003560e01c806396cd25ef146038575b600080fd5b603e6052565b604051604991906076565b60405180910390f35b7f23d235efaf569b2b407d10f447247743508d1762a8e3a3aed85ccc0570dde35f81565b6001600160e01b03199190911681526020019056fea2646970667358221220a8c67aba10cf392bd1b8df52484755a83bf4560ed64e7f0645a9c6861857238364736f6c63430007060033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [
     {
       "ast": {
         "nodeType": "YulBlock",
-        "src": "0:226:45",
+        "src": "0:226:46",
         "statements": [
           {
             "nodeType": "YulBlock",
-            "src": "6:3:45",
+            "src": "6:3:46",
             "statements": []
           },
           {
             "body": {
               "nodeType": "YulBlock",
-              "src": "121:103:45",
+              "src": "121:103:46",
               "statements": [
                 {
                   "nodeType": "YulAssignment",
-                  "src": "131:26:45",
+                  "src": "131:26:46",
                   "value": {
                     "arguments": [
                       {
                         "name": "headStart",
                         "nodeType": "YulIdentifier",
-                        "src": "143:9:45"
+                        "src": "143:9:46"
                       },
                       {
                         "kind": "number",
                         "nodeType": "YulLiteral",
-                        "src": "154:2:45",
+                        "src": "154:2:46",
                         "type": "",
                         "value": "32"
                       }
@@ -57,16 +57,16 @@
                     "functionName": {
                       "name": "add",
                       "nodeType": "YulIdentifier",
-                      "src": "139:3:45"
+                      "src": "139:3:46"
                     },
                     "nodeType": "YulFunctionCall",
-                    "src": "139:18:45"
+                    "src": "139:18:46"
                   },
                   "variableNames": [
                     {
                       "name": "tail",
                       "nodeType": "YulIdentifier",
-                      "src": "131:4:45"
+                      "src": "131:4:46"
                     }
                   ]
                 },
@@ -76,28 +76,28 @@
                       {
                         "name": "headStart",
                         "nodeType": "YulIdentifier",
-                        "src": "173:9:45"
+                        "src": "173:9:46"
                       },
                       {
                         "arguments": [
                           {
                             "name": "value0",
                             "nodeType": "YulIdentifier",
-                            "src": "188:6:45"
+                            "src": "188:6:46"
                           },
                           {
                             "arguments": [
                               {
                                 "kind": "number",
                                 "nodeType": "YulLiteral",
-                                "src": "200:3:45",
+                                "src": "200:3:46",
                                 "type": "",
                                 "value": "224"
                               },
                               {
                                 "kind": "number",
                                 "nodeType": "YulLiteral",
-                                "src": "205:10:45",
+                                "src": "205:10:46",
                                 "type": "",
                                 "value": "0xffffffff"
                               }
@@ -105,31 +105,31 @@
                             "functionName": {
                               "name": "shl",
                               "nodeType": "YulIdentifier",
-                              "src": "196:3:45"
+                              "src": "196:3:46"
                             },
                             "nodeType": "YulFunctionCall",
-                            "src": "196:20:45"
+                            "src": "196:20:46"
                           }
                         ],
                         "functionName": {
                           "name": "and",
                           "nodeType": "YulIdentifier",
-                          "src": "184:3:45"
+                          "src": "184:3:46"
                         },
                         "nodeType": "YulFunctionCall",
-                        "src": "184:33:45"
+                        "src": "184:33:46"
                       }
                     ],
                     "functionName": {
                       "name": "mstore",
                       "nodeType": "YulIdentifier",
-                      "src": "166:6:45"
+                      "src": "166:6:46"
                     },
                     "nodeType": "YulFunctionCall",
-                    "src": "166:52:45"
+                    "src": "166:52:46"
                   },
                   "nodeType": "YulExpressionStatement",
-                  "src": "166:52:45"
+                  "src": "166:52:46"
                 }
               ]
             },
@@ -139,13 +139,13 @@
               {
                 "name": "headStart",
                 "nodeType": "YulTypedName",
-                "src": "90:9:45",
+                "src": "90:9:46",
                 "type": ""
               },
               {
                 "name": "value0",
                 "nodeType": "YulTypedName",
-                "src": "101:6:45",
+                "src": "101:6:46",
                 "type": ""
               }
             ],
@@ -153,65 +153,65 @@
               {
                 "name": "tail",
                 "nodeType": "YulTypedName",
-                "src": "112:4:45",
+                "src": "112:4:46",
                 "type": ""
               }
             ],
-            "src": "14:210:45"
+            "src": "14:210:46"
           }
         ]
       },
       "contents": "{\n    { }\n    function abi_encode_tuple_t_bytes4__to_t_bytes4__fromStack_library_reversed(headStart, value0) -> tail\n    {\n        tail := add(headStart, 32)\n        mstore(headStart, and(value0, shl(224, 0xffffffff)))\n    }\n}",
-      "id": 45,
+      "id": 46,
       "language": "Yul",
       "name": "#utility.yul"
     }
   ],
-  "sourceMap": "129:358:29:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "129:358:29:-:0;;;;;;;;;;;;;;;;;;;;;;;;158:51;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;193:15;158:51;:::o;14:210:45:-;-1:-1:-1;;;;;;184:33:45;;;;166:52;;154:2;139:18;;121:103::o",
-  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.7.6;\npragma abicoder v2;\n\nimport \"@rarible/royalties/contracts/LibPart.sol\";\n\nlibrary LibOrderDataV2 {\n    bytes4 constant public V2 = bytes4(keccak256(\"V2\"));\n\n    struct DataV2 {\n        LibPart.Part[] payouts;\n        LibPart.Part[] originFees;\n        bool isMakeFill;\n    }\n\n    function decodeOrderDataV2(bytes memory data) internal pure returns (DataV2 memory orderData) {\n        orderData = abi.decode(data, (DataV2));\n    }\n\n}\n",
-  "sourcePath": "@rarible/libraries/contracts/LibOrderDataV2.sol",
+  "sourceMap": "128:358:12:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "128:358:12:-:0;;;;;;;;;;;;;;;;;;;;;;;;157:51;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;192:15;157:51;:::o;14:210:46:-;-1:-1:-1;;;;;;184:33:46;;;;166:52;;154:2;139:18;;121:103::o",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.7.6;\npragma abicoder v2;\n\nimport \"@rarible/lib-part/contracts/LibPart.sol\";\n\nlibrary LibOrderDataV2 {\n    bytes4 constant public V2 = bytes4(keccak256(\"V2\"));\n\n    struct DataV2 {\n        LibPart.Part[] payouts;\n        LibPart.Part[] originFees;\n        bool isMakeFill;\n    }\n\n    function decodeOrderDataV2(bytes memory data) internal pure returns (DataV2 memory orderData) {\n        orderData = abi.decode(data, (DataV2));\n    }\n\n}\n",
+  "sourcePath": "/Users/quintin/Desktop/protocol-contracts/exchange-v2/contracts/libraries/LibOrderDataV2.sol",
   "ast": {
-    "absolutePath": "@rarible/libraries/contracts/LibOrderDataV2.sol",
+    "absolutePath": "/Users/quintin/Desktop/protocol-contracts/exchange-v2/contracts/libraries/LibOrderDataV2.sol",
     "exportedSymbols": {
       "LibOrderDataV2": [
-        3208
+        2883
       ],
       "LibPart": [
-        3793
+        5276
       ]
     },
-    "id": 3209,
+    "id": 2884,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3171,
+        "id": 2846,
         "literals": [
           "solidity",
           "0.7",
           ".6"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:22:29"
+        "src": "33:22:12"
       },
       {
-        "id": 3172,
+        "id": 2847,
         "literals": [
           "abicoder",
           "v2"
         ],
         "nodeType": "PragmaDirective",
-        "src": "56:19:29"
+        "src": "56:19:12"
       },
       {
-        "absolutePath": "@rarible/royalties/contracts/LibPart.sol",
-        "file": "@rarible/royalties/contracts/LibPart.sol",
-        "id": 3173,
+        "absolutePath": "@rarible/lib-part/contracts/LibPart.sol",
+        "file": "@rarible/lib-part/contracts/LibPart.sol",
+        "id": 2848,
         "nodeType": "ImportDirective",
-        "scope": 3209,
-        "sourceUnit": 3794,
-        "src": "77:50:29",
+        "scope": 2884,
+        "sourceUnit": 5277,
+        "src": "77:49:12",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -221,9 +221,9 @@
         "contractDependencies": [],
         "contractKind": "library",
         "fullyImplemented": true,
-        "id": 3208,
+        "id": 2883,
         "linearizedBaseContracts": [
-          3208
+          2883
         ],
         "name": "LibOrderDataV2",
         "nodeType": "ContractDefinition",
@@ -231,12 +231,12 @@
           {
             "constant": true,
             "functionSelector": "96cd25ef",
-            "id": 3181,
+            "id": 2856,
             "mutability": "constant",
             "name": "V2",
             "nodeType": "VariableDeclaration",
-            "scope": 3208,
-            "src": "158:51:29",
+            "scope": 2883,
+            "src": "157:51:12",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -244,10 +244,10 @@
               "typeString": "bytes4"
             },
             "typeName": {
-              "id": 3174,
+              "id": 2849,
               "name": "bytes4",
               "nodeType": "ElementaryTypeName",
-              "src": "158:6:29",
+              "src": "157:6:12",
               "typeDescriptions": {
                 "typeIdentifier": "t_bytes4",
                 "typeString": "bytes4"
@@ -259,14 +259,14 @@
                   "arguments": [
                     {
                       "hexValue": "5632",
-                      "id": 3178,
+                      "id": 2853,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "string",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "203:4:29",
+                      "src": "202:4:12",
                       "typeDescriptions": {
                         "typeIdentifier": "t_stringliteral_23d235efaf569b2b407d10f447247743508d1762a8e3a3aed85ccc0570dde35f",
                         "typeString": "literal_string \"V2\""
@@ -281,18 +281,18 @@
                         "typeString": "literal_string \"V2\""
                       }
                     ],
-                    "id": 3177,
+                    "id": 2852,
                     "name": "keccak256",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 4294967288,
-                    "src": "193:9:29",
+                    "src": "192:9:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
                       "typeString": "function (bytes memory) pure returns (bytes32)"
                     }
                   },
-                  "id": 3179,
+                  "id": 2854,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -300,7 +300,7 @@
                   "lValueRequested": false,
                   "names": [],
                   "nodeType": "FunctionCall",
-                  "src": "193:15:29",
+                  "src": "192:15:12",
                   "tryCall": false,
                   "typeDescriptions": {
                     "typeIdentifier": "t_bytes32",
@@ -315,26 +315,26 @@
                     "typeString": "bytes32"
                   }
                 ],
-                "id": 3176,
+                "id": 2851,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "lValueRequested": false,
                 "nodeType": "ElementaryTypeNameExpression",
-                "src": "186:6:29",
+                "src": "185:6:12",
                 "typeDescriptions": {
                   "typeIdentifier": "t_type$_t_bytes4_$",
                   "typeString": "type(bytes4)"
                 },
                 "typeName": {
-                  "id": 3175,
+                  "id": 2850,
                   "name": "bytes4",
                   "nodeType": "ElementaryTypeName",
-                  "src": "186:6:29",
+                  "src": "185:6:12",
                   "typeDescriptions": {}
                 }
               },
-              "id": 3180,
+              "id": 2855,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -342,7 +342,7 @@
               "lValueRequested": false,
               "names": [],
               "nodeType": "FunctionCall",
-              "src": "186:23:29",
+              "src": "185:23:12",
               "tryCall": false,
               "typeDescriptions": {
                 "typeIdentifier": "t_bytes4",
@@ -353,39 +353,39 @@
           },
           {
             "canonicalName": "LibOrderDataV2.DataV2",
-            "id": 3190,
+            "id": 2865,
             "members": [
               {
                 "constant": false,
-                "id": 3184,
+                "id": 2859,
                 "mutability": "mutable",
                 "name": "payouts",
                 "nodeType": "VariableDeclaration",
-                "scope": 3190,
-                "src": "240:22:29",
+                "scope": 2865,
+                "src": "239:22:12",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_array$_t_struct$_Part_$3773_storage_$dyn_storage_ptr",
+                  "typeIdentifier": "t_array$_t_struct$_Part_$5256_storage_$dyn_storage_ptr",
                   "typeString": "struct LibPart.Part[]"
                 },
                 "typeName": {
                   "baseType": {
-                    "id": 3182,
+                    "id": 2857,
                     "name": "LibPart.Part",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3773,
-                    "src": "240:12:29",
+                    "referencedDeclaration": 5256,
+                    "src": "239:12:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Part_$3773_storage_ptr",
+                      "typeIdentifier": "t_struct$_Part_$5256_storage_ptr",
                       "typeString": "struct LibPart.Part"
                     }
                   },
-                  "id": 3183,
+                  "id": 2858,
                   "nodeType": "ArrayTypeName",
-                  "src": "240:14:29",
+                  "src": "239:14:12",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Part_$3773_storage_$dyn_storage_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_Part_$5256_storage_$dyn_storage_ptr",
                     "typeString": "struct LibPart.Part[]"
                   }
                 },
@@ -393,35 +393,35 @@
               },
               {
                 "constant": false,
-                "id": 3187,
+                "id": 2862,
                 "mutability": "mutable",
                 "name": "originFees",
                 "nodeType": "VariableDeclaration",
-                "scope": 3190,
-                "src": "272:25:29",
+                "scope": 2865,
+                "src": "271:25:12",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_array$_t_struct$_Part_$3773_storage_$dyn_storage_ptr",
+                  "typeIdentifier": "t_array$_t_struct$_Part_$5256_storage_$dyn_storage_ptr",
                   "typeString": "struct LibPart.Part[]"
                 },
                 "typeName": {
                   "baseType": {
-                    "id": 3185,
+                    "id": 2860,
                     "name": "LibPart.Part",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3773,
-                    "src": "272:12:29",
+                    "referencedDeclaration": 5256,
+                    "src": "271:12:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Part_$3773_storage_ptr",
+                      "typeIdentifier": "t_struct$_Part_$5256_storage_ptr",
                       "typeString": "struct LibPart.Part"
                     }
                   },
-                  "id": 3186,
+                  "id": 2861,
                   "nodeType": "ArrayTypeName",
-                  "src": "272:14:29",
+                  "src": "271:14:12",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Part_$3773_storage_$dyn_storage_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_Part_$5256_storage_$dyn_storage_ptr",
                     "typeString": "struct LibPart.Part[]"
                   }
                 },
@@ -429,12 +429,12 @@
               },
               {
                 "constant": false,
-                "id": 3189,
+                "id": 2864,
                 "mutability": "mutable",
                 "name": "isMakeFill",
                 "nodeType": "VariableDeclaration",
-                "scope": 3190,
-                "src": "307:15:29",
+                "scope": 2865,
+                "src": "306:15:12",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -442,10 +442,10 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 3188,
+                  "id": 2863,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "307:4:29",
+                  "src": "306:4:12",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -456,32 +456,32 @@
             ],
             "name": "DataV2",
             "nodeType": "StructDefinition",
-            "scope": 3208,
-            "src": "216:113:29",
+            "scope": 2883,
+            "src": "215:113:12",
             "visibility": "public"
           },
           {
             "body": {
-              "id": 3206,
+              "id": 2881,
               "nodeType": "Block",
-              "src": "429:55:29",
+              "src": "428:55:12",
               "statements": [
                 {
                   "expression": {
-                    "id": 3204,
+                    "id": 2879,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 3197,
+                      "id": 2872,
                       "name": "orderData",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3195,
-                      "src": "439:9:29",
+                      "referencedDeclaration": 2870,
+                      "src": "438:9:12",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_DataV2_$3190_memory_ptr",
+                        "typeIdentifier": "t_struct$_DataV2_$2865_memory_ptr",
                         "typeString": "struct LibOrderDataV2.DataV2 memory"
                       }
                     },
@@ -490,12 +490,12 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 3200,
+                          "id": 2875,
                           "name": "data",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3192,
-                          "src": "462:4:29",
+                          "referencedDeclaration": 2867,
+                          "src": "461:4:12",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes_memory_ptr",
                             "typeString": "bytes memory"
@@ -504,28 +504,28 @@
                         {
                           "components": [
                             {
-                              "id": 3201,
+                              "id": 2876,
                               "name": "DataV2",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 3190,
-                              "src": "469:6:29",
+                              "referencedDeclaration": 2865,
+                              "src": "468:6:12",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_struct$_DataV2_$3190_storage_ptr_$",
+                                "typeIdentifier": "t_type$_t_struct$_DataV2_$2865_storage_ptr_$",
                                 "typeString": "type(struct LibOrderDataV2.DataV2 storage pointer)"
                               }
                             }
                           ],
-                          "id": 3202,
+                          "id": 2877,
                           "isConstant": false,
                           "isInlineArray": false,
                           "isLValue": false,
                           "isPure": true,
                           "lValueRequested": false,
                           "nodeType": "TupleExpression",
-                          "src": "468:8:29",
+                          "src": "467:8:12",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_struct$_DataV2_$3190_storage_ptr_$",
+                            "typeIdentifier": "t_type$_t_struct$_DataV2_$2865_storage_ptr_$",
                             "typeString": "type(struct LibOrderDataV2.DataV2 storage pointer)"
                           }
                         }
@@ -537,36 +537,36 @@
                             "typeString": "bytes memory"
                           },
                           {
-                            "typeIdentifier": "t_type$_t_struct$_DataV2_$3190_storage_ptr_$",
+                            "typeIdentifier": "t_type$_t_struct$_DataV2_$2865_storage_ptr_$",
                             "typeString": "type(struct LibOrderDataV2.DataV2 storage pointer)"
                           }
                         ],
                         "expression": {
-                          "id": 3198,
+                          "id": 2873,
                           "name": "abi",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 4294967295,
-                          "src": "451:3:29",
+                          "src": "450:3:12",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_abi",
                             "typeString": "abi"
                           }
                         },
-                        "id": 3199,
+                        "id": 2874,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "lValueRequested": false,
                         "memberName": "decode",
                         "nodeType": "MemberAccess",
-                        "src": "451:10:29",
+                        "src": "450:10:12",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_abidecode_pure$__$returns$__$",
                           "typeString": "function () pure"
                         }
                       },
-                      "id": 3203,
+                      "id": 2878,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -574,43 +574,43 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "451:26:29",
+                      "src": "450:26:12",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_DataV2_$3190_memory_ptr",
+                        "typeIdentifier": "t_struct$_DataV2_$2865_memory_ptr",
                         "typeString": "struct LibOrderDataV2.DataV2 memory"
                       }
                     },
-                    "src": "439:38:29",
+                    "src": "438:38:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_DataV2_$3190_memory_ptr",
+                      "typeIdentifier": "t_struct$_DataV2_$2865_memory_ptr",
                       "typeString": "struct LibOrderDataV2.DataV2 memory"
                     }
                   },
-                  "id": 3205,
+                  "id": 2880,
                   "nodeType": "ExpressionStatement",
-                  "src": "439:38:29"
+                  "src": "438:38:12"
                 }
               ]
             },
-            "id": 3207,
+            "id": 2882,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "decodeOrderDataV2",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3193,
+              "id": 2868,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3192,
+                  "id": 2867,
                   "mutability": "mutable",
                   "name": "data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3207,
-                  "src": "362:17:29",
+                  "scope": 2882,
+                  "src": "361:17:12",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -618,10 +618,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 3191,
+                    "id": 2866,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "362:5:29",
+                    "src": "361:5:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -630,64 +630,64 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "361:19:29"
+              "src": "360:19:12"
             },
             "returnParameters": {
-              "id": 3196,
+              "id": 2871,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3195,
+                  "id": 2870,
                   "mutability": "mutable",
                   "name": "orderData",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3207,
-                  "src": "404:23:29",
+                  "scope": 2882,
+                  "src": "403:23:12",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_DataV2_$3190_memory_ptr",
+                    "typeIdentifier": "t_struct$_DataV2_$2865_memory_ptr",
                     "typeString": "struct LibOrderDataV2.DataV2"
                   },
                   "typeName": {
-                    "id": 3194,
+                    "id": 2869,
                     "name": "DataV2",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3190,
-                    "src": "404:6:29",
+                    "referencedDeclaration": 2865,
+                    "src": "403:6:12",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_DataV2_$3190_storage_ptr",
+                      "typeIdentifier": "t_struct$_DataV2_$2865_storage_ptr",
                       "typeString": "struct LibOrderDataV2.DataV2"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "403:25:29"
+              "src": "402:25:12"
             },
-            "scope": 3208,
-            "src": "335:149:29",
+            "scope": 2883,
+            "src": "334:149:12",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 3209,
-        "src": "129:358:29"
+        "scope": 2884,
+        "src": "128:358:12"
       }
     ],
-    "src": "33:455:29"
+    "src": "33:454:12"
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "@rarible/libraries/contracts/LibOrderDataV2.sol",
+      "absolutePath": "/Users/quintin/Desktop/protocol-contracts/exchange-v2/contracts/libraries/LibOrderDataV2.sol",
       "exportedSymbols": {
         "LibOrderDataV2": [
-          3208
+          2883
         ],
         "LibPart": [
-          3793
+          5276
         ]
       },
       "license": "MIT"
@@ -701,9 +701,9 @@
             ".6"
           ]
         },
-        "id": 3171,
+        "id": 2846,
         "name": "PragmaDirective",
-        "src": "33:22:29"
+        "src": "33:22:12"
       },
       {
         "attributes": {
@@ -712,24 +712,24 @@
             "v2"
           ]
         },
-        "id": 3172,
+        "id": 2847,
         "name": "PragmaDirective",
-        "src": "56:19:29"
+        "src": "56:19:12"
       },
       {
         "attributes": {
-          "SourceUnit": 3794,
-          "absolutePath": "@rarible/royalties/contracts/LibPart.sol",
-          "file": "@rarible/royalties/contracts/LibPart.sol",
-          "scope": 3209,
+          "SourceUnit": 5277,
+          "absolutePath": "@rarible/lib-part/contracts/LibPart.sol",
+          "file": "@rarible/lib-part/contracts/LibPart.sol",
+          "scope": 2884,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 3173,
+        "id": 2848,
         "name": "ImportDirective",
-        "src": "77:50:29"
+        "src": "77:49:12"
       },
       {
         "attributes": {
@@ -743,10 +743,10 @@
           "contractKind": "library",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            3208
+            2883
           ],
           "name": "LibOrderDataV2",
-          "scope": 3209
+          "scope": 2884
         },
         "children": [
           {
@@ -755,7 +755,7 @@
               "functionSelector": "96cd25ef",
               "mutability": "constant",
               "name": "V2",
-              "scope": 3208,
+              "scope": 2883,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "bytes4",
@@ -767,9 +767,9 @@
                   "name": "bytes4",
                   "type": "bytes4"
                 },
-                "id": 3174,
+                "id": 2849,
                 "name": "ElementaryTypeName",
-                "src": "158:6:29"
+                "src": "157:6:12"
               },
               {
                 "attributes": {
@@ -805,14 +805,14 @@
                         "attributes": {
                           "name": "bytes4"
                         },
-                        "id": 3175,
+                        "id": 2850,
                         "name": "ElementaryTypeName",
-                        "src": "186:6:29"
+                        "src": "185:6:12"
                       }
                     ],
-                    "id": 3176,
+                    "id": 2851,
                     "name": "ElementaryTypeNameExpression",
-                    "src": "186:6:29"
+                    "src": "185:6:12"
                   },
                   {
                     "attributes": {
@@ -844,9 +844,9 @@
                           "type": "function (bytes memory) pure returns (bytes32)",
                           "value": "keccak256"
                         },
-                        "id": 3177,
+                        "id": 2852,
                         "name": "Identifier",
-                        "src": "193:9:29"
+                        "src": "192:9:12"
                       },
                       {
                         "attributes": {
@@ -859,30 +859,30 @@
                           "type": "literal_string \"V2\"",
                           "value": "V2"
                         },
-                        "id": 3178,
+                        "id": 2853,
                         "name": "Literal",
-                        "src": "203:4:29"
+                        "src": "202:4:12"
                       }
                     ],
-                    "id": 3179,
+                    "id": 2854,
                     "name": "FunctionCall",
-                    "src": "193:15:29"
+                    "src": "192:15:12"
                   }
                 ],
-                "id": 3180,
+                "id": 2855,
                 "name": "FunctionCall",
-                "src": "186:23:29"
+                "src": "185:23:12"
               }
             ],
-            "id": 3181,
+            "id": 2856,
             "name": "VariableDeclaration",
-            "src": "158:51:29"
+            "src": "157:51:12"
           },
           {
             "attributes": {
               "canonicalName": "LibOrderDataV2.DataV2",
               "name": "DataV2",
-              "scope": 3208,
+              "scope": 2883,
               "visibility": "public"
             },
             "children": [
@@ -891,7 +891,7 @@
                   "constant": false,
                   "mutability": "mutable",
                   "name": "payouts",
-                  "scope": 3190,
+                  "scope": 2865,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "struct LibPart.Part[]",
@@ -906,29 +906,29 @@
                       {
                         "attributes": {
                           "name": "LibPart.Part",
-                          "referencedDeclaration": 3773,
+                          "referencedDeclaration": 5256,
                           "type": "struct LibPart.Part"
                         },
-                        "id": 3182,
+                        "id": 2857,
                         "name": "UserDefinedTypeName",
-                        "src": "240:12:29"
+                        "src": "239:12:12"
                       }
                     ],
-                    "id": 3183,
+                    "id": 2858,
                     "name": "ArrayTypeName",
-                    "src": "240:14:29"
+                    "src": "239:14:12"
                   }
                 ],
-                "id": 3184,
+                "id": 2859,
                 "name": "VariableDeclaration",
-                "src": "240:22:29"
+                "src": "239:22:12"
               },
               {
                 "attributes": {
                   "constant": false,
                   "mutability": "mutable",
                   "name": "originFees",
-                  "scope": 3190,
+                  "scope": 2865,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "struct LibPart.Part[]",
@@ -943,29 +943,29 @@
                       {
                         "attributes": {
                           "name": "LibPart.Part",
-                          "referencedDeclaration": 3773,
+                          "referencedDeclaration": 5256,
                           "type": "struct LibPart.Part"
                         },
-                        "id": 3185,
+                        "id": 2860,
                         "name": "UserDefinedTypeName",
-                        "src": "272:12:29"
+                        "src": "271:12:12"
                       }
                     ],
-                    "id": 3186,
+                    "id": 2861,
                     "name": "ArrayTypeName",
-                    "src": "272:14:29"
+                    "src": "271:14:12"
                   }
                 ],
-                "id": 3187,
+                "id": 2862,
                 "name": "VariableDeclaration",
-                "src": "272:25:29"
+                "src": "271:25:12"
               },
               {
                 "attributes": {
                   "constant": false,
                   "mutability": "mutable",
                   "name": "isMakeFill",
-                  "scope": 3190,
+                  "scope": 2865,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "bool",
@@ -977,19 +977,19 @@
                       "name": "bool",
                       "type": "bool"
                     },
-                    "id": 3188,
+                    "id": 2863,
                     "name": "ElementaryTypeName",
-                    "src": "307:4:29"
+                    "src": "306:4:12"
                   }
                 ],
-                "id": 3189,
+                "id": 2864,
                 "name": "VariableDeclaration",
-                "src": "307:15:29"
+                "src": "306:15:12"
               }
             ],
-            "id": 3190,
+            "id": 2865,
             "name": "StructDefinition",
-            "src": "216:113:29"
+            "src": "215:113:12"
           },
           {
             "attributes": {
@@ -1000,7 +1000,7 @@
                 null
               ],
               "name": "decodeOrderDataV2",
-              "scope": 3208,
+              "scope": 2883,
               "stateMutability": "pure",
               "virtual": false,
               "visibility": "internal"
@@ -1013,7 +1013,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "data",
-                      "scope": 3207,
+                      "scope": 2882,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "bytes",
@@ -1025,19 +1025,19 @@
                           "name": "bytes",
                           "type": "bytes"
                         },
-                        "id": 3191,
+                        "id": 2866,
                         "name": "ElementaryTypeName",
-                        "src": "362:5:29"
+                        "src": "361:5:12"
                       }
                     ],
-                    "id": 3192,
+                    "id": 2867,
                     "name": "VariableDeclaration",
-                    "src": "362:17:29"
+                    "src": "361:17:12"
                   }
                 ],
-                "id": 3193,
+                "id": 2868,
                 "name": "ParameterList",
-                "src": "361:19:29"
+                "src": "360:19:12"
               },
               {
                 "children": [
@@ -1046,7 +1046,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "orderData",
-                      "scope": 3207,
+                      "scope": 2882,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "struct LibOrderDataV2.DataV2",
@@ -1056,22 +1056,22 @@
                       {
                         "attributes": {
                           "name": "DataV2",
-                          "referencedDeclaration": 3190,
+                          "referencedDeclaration": 2865,
                           "type": "struct LibOrderDataV2.DataV2"
                         },
-                        "id": 3194,
+                        "id": 2869,
                         "name": "UserDefinedTypeName",
-                        "src": "404:6:29"
+                        "src": "403:6:12"
                       }
                     ],
-                    "id": 3195,
+                    "id": 2870,
                     "name": "VariableDeclaration",
-                    "src": "404:23:29"
+                    "src": "403:23:12"
                   }
                 ],
-                "id": 3196,
+                "id": 2871,
                 "name": "ParameterList",
-                "src": "403:25:29"
+                "src": "402:25:12"
               },
               {
                 "children": [
@@ -1092,13 +1092,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 3195,
+                              "referencedDeclaration": 2870,
                               "type": "struct LibOrderDataV2.DataV2 memory",
                               "value": "orderData"
                             },
-                            "id": 3197,
+                            "id": 2872,
                             "name": "Identifier",
-                            "src": "439:9:29"
+                            "src": "438:9:12"
                           },
                           {
                             "attributes": {
@@ -1123,7 +1123,7 @@
                                       "typeString": "bytes memory"
                                     },
                                     {
-                                      "typeIdentifier": "t_type$_t_struct$_DataV2_$3190_storage_ptr_$",
+                                      "typeIdentifier": "t_type$_t_struct$_DataV2_$2865_storage_ptr_$",
                                       "typeString": "type(struct LibOrderDataV2.DataV2 storage pointer)"
                                     }
                                   ],
@@ -1144,27 +1144,27 @@
                                       "type": "abi",
                                       "value": "abi"
                                     },
-                                    "id": 3198,
+                                    "id": 2873,
                                     "name": "Identifier",
-                                    "src": "451:3:29"
+                                    "src": "450:3:12"
                                   }
                                 ],
-                                "id": 3199,
+                                "id": 2874,
                                 "name": "MemberAccess",
-                                "src": "451:10:29"
+                                "src": "450:10:12"
                               },
                               {
                                 "attributes": {
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 3192,
+                                  "referencedDeclaration": 2867,
                                   "type": "bytes memory",
                                   "value": "data"
                                 },
-                                "id": 3200,
+                                "id": 2875,
                                 "name": "Identifier",
-                                "src": "462:4:29"
+                                "src": "461:4:12"
                               },
                               {
                                 "attributes": {
@@ -1181,61 +1181,61 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 3190,
+                                      "referencedDeclaration": 2865,
                                       "type": "type(struct LibOrderDataV2.DataV2 storage pointer)",
                                       "value": "DataV2"
                                     },
-                                    "id": 3201,
+                                    "id": 2876,
                                     "name": "Identifier",
-                                    "src": "469:6:29"
+                                    "src": "468:6:12"
                                   }
                                 ],
-                                "id": 3202,
+                                "id": 2877,
                                 "name": "TupleExpression",
-                                "src": "468:8:29"
+                                "src": "467:8:12"
                               }
                             ],
-                            "id": 3203,
+                            "id": 2878,
                             "name": "FunctionCall",
-                            "src": "451:26:29"
+                            "src": "450:26:12"
                           }
                         ],
-                        "id": 3204,
+                        "id": 2879,
                         "name": "Assignment",
-                        "src": "439:38:29"
+                        "src": "438:38:12"
                       }
                     ],
-                    "id": 3205,
+                    "id": 2880,
                     "name": "ExpressionStatement",
-                    "src": "439:38:29"
+                    "src": "438:38:12"
                   }
                 ],
-                "id": 3206,
+                "id": 2881,
                 "name": "Block",
-                "src": "429:55:29"
+                "src": "428:55:12"
               }
             ],
-            "id": 3207,
+            "id": 2882,
             "name": "FunctionDefinition",
-            "src": "335:149:29"
+            "src": "334:149:12"
           }
         ],
-        "id": 3208,
+        "id": 2883,
         "name": "ContractDefinition",
-        "src": "129:358:29"
+        "src": "128:358:12"
       }
     ],
-    "id": 3209,
+    "id": 2884,
     "name": "SourceUnit",
-    "src": "33:455:29"
+    "src": "33:454:12"
   },
   "compiler": {
     "name": "solc",
     "version": "0.7.6+commit.7338295f.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.3",
-  "updatedAt": "2022-03-11T06:21:17.021Z",
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2022-08-04T11:17:32.422Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

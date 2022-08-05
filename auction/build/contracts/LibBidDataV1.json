@@ -15,41 +15,41 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"V1\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"library that works with data field of Bid struct\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/libs/LibBidDataV1.sol\":\"LibBidDataV1\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/libs/LibBidDataV1.sol\":{\"keccak256\":\"0x31e776bbdb5818c68694d46058efdde5f1b1198b1b039f94329a9eea283392f1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f9ba27edd751a928fcd07e73d2b3a128132aa8ed02277b8c2e9a08356ec1086a\",\"dweb:/ipfs/QmY2mF6pqMk4SY16vnMmNa1qtCLknYxaCKWfrCX6Lvdbk8\"]}},\"version\":1}",
-  "bytecode": "0x60c1610025600b82828239805160001a60731461001857fe5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060335760003560e01c80633ee569bf146038575b600080fd5b603e6052565b604051604991906076565b60405180910390f35b7f4c23426613a5dc69e08fbd2787e6210aa679d4522e95a89d4dd88c4fd13a228381565b6001600160e01b03199190911681526020019056fea264697066735822122043912ccf5ad48e6b9753dc122e4cff365dd99853ba26177e7b7ebec1e03f76a564736f6c63430007060033",
-  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361060335760003560e01c80633ee569bf146038575b600080fd5b603e6052565b604051604991906076565b60405180910390f35b7f4c23426613a5dc69e08fbd2787e6210aa679d4522e95a89d4dd88c4fd13a228381565b6001600160e01b03199190911681526020019056fea264697066735822122043912ccf5ad48e6b9753dc122e4cff365dd99853ba26177e7b7ebec1e03f76a564736f6c63430007060033",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"V1\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"library that works with data field of Bid struct\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/quintin/Desktop/protocol-contracts/auction/contracts/libs/LibBidDataV1.sol\":\"LibBidDataV1\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/quintin/Desktop/protocol-contracts/auction/contracts/libs/LibBidDataV1.sol\":{\"keccak256\":\"0x31e776bbdb5818c68694d46058efdde5f1b1198b1b039f94329a9eea283392f1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f9ba27edd751a928fcd07e73d2b3a128132aa8ed02277b8c2e9a08356ec1086a\",\"dweb:/ipfs/QmY2mF6pqMk4SY16vnMmNa1qtCLknYxaCKWfrCX6Lvdbk8\"]}},\"version\":1}",
+  "bytecode": "0x60c1610025600b82828239805160001a60731461001857fe5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060335760003560e01c80633ee569bf146038575b600080fd5b603e6052565b604051604991906076565b60405180910390f35b7f4c23426613a5dc69e08fbd2787e6210aa679d4522e95a89d4dd88c4fd13a228381565b6001600160e01b03199190911681526020019056fea264697066735822122016c246e91af01d06304d4be974605ec202fdad52dc3be07048fe0b9ad0334c4864736f6c63430007060033",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361060335760003560e01c80633ee569bf146038575b600080fd5b603e6052565b604051604991906076565b60405180910390f35b7f4c23426613a5dc69e08fbd2787e6210aa679d4522e95a89d4dd88c4fd13a228381565b6001600160e01b03199190911681526020019056fea264697066735822122016c246e91af01d06304d4be974605ec202fdad52dc3be07048fe0b9ad0334c4864736f6c63430007060033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [
     {
       "ast": {
         "nodeType": "YulBlock",
-        "src": "0:226:52",
+        "src": "0:226:44",
         "statements": [
           {
             "nodeType": "YulBlock",
-            "src": "6:3:52",
+            "src": "6:3:44",
             "statements": []
           },
           {
             "body": {
               "nodeType": "YulBlock",
-              "src": "121:103:52",
+              "src": "121:103:44",
               "statements": [
                 {
                   "nodeType": "YulAssignment",
-                  "src": "131:26:52",
+                  "src": "131:26:44",
                   "value": {
                     "arguments": [
                       {
                         "name": "headStart",
                         "nodeType": "YulIdentifier",
-                        "src": "143:9:52"
+                        "src": "143:9:44"
                       },
                       {
                         "kind": "number",
                         "nodeType": "YulLiteral",
-                        "src": "154:2:52",
+                        "src": "154:2:44",
                         "type": "",
                         "value": "32"
                       }
@@ -57,16 +57,16 @@
                     "functionName": {
                       "name": "add",
                       "nodeType": "YulIdentifier",
-                      "src": "139:3:52"
+                      "src": "139:3:44"
                     },
                     "nodeType": "YulFunctionCall",
-                    "src": "139:18:52"
+                    "src": "139:18:44"
                   },
                   "variableNames": [
                     {
                       "name": "tail",
                       "nodeType": "YulIdentifier",
-                      "src": "131:4:52"
+                      "src": "131:4:44"
                     }
                   ]
                 },
@@ -76,28 +76,28 @@
                       {
                         "name": "headStart",
                         "nodeType": "YulIdentifier",
-                        "src": "173:9:52"
+                        "src": "173:9:44"
                       },
                       {
                         "arguments": [
                           {
                             "name": "value0",
                             "nodeType": "YulIdentifier",
-                            "src": "188:6:52"
+                            "src": "188:6:44"
                           },
                           {
                             "arguments": [
                               {
                                 "kind": "number",
                                 "nodeType": "YulLiteral",
-                                "src": "200:3:52",
+                                "src": "200:3:44",
                                 "type": "",
                                 "value": "224"
                               },
                               {
                                 "kind": "number",
                                 "nodeType": "YulLiteral",
-                                "src": "205:10:52",
+                                "src": "205:10:44",
                                 "type": "",
                                 "value": "0xffffffff"
                               }
@@ -105,31 +105,31 @@
                             "functionName": {
                               "name": "shl",
                               "nodeType": "YulIdentifier",
-                              "src": "196:3:52"
+                              "src": "196:3:44"
                             },
                             "nodeType": "YulFunctionCall",
-                            "src": "196:20:52"
+                            "src": "196:20:44"
                           }
                         ],
                         "functionName": {
                           "name": "and",
                           "nodeType": "YulIdentifier",
-                          "src": "184:3:52"
+                          "src": "184:3:44"
                         },
                         "nodeType": "YulFunctionCall",
-                        "src": "184:33:52"
+                        "src": "184:33:44"
                       }
                     ],
                     "functionName": {
                       "name": "mstore",
                       "nodeType": "YulIdentifier",
-                      "src": "166:6:52"
+                      "src": "166:6:44"
                     },
                     "nodeType": "YulFunctionCall",
-                    "src": "166:52:52"
+                    "src": "166:52:44"
                   },
                   "nodeType": "YulExpressionStatement",
-                  "src": "166:52:52"
+                  "src": "166:52:44"
                 }
               ]
             },
@@ -139,13 +139,13 @@
               {
                 "name": "headStart",
                 "nodeType": "YulTypedName",
-                "src": "90:9:52",
+                "src": "90:9:44",
                 "type": ""
               },
               {
                 "name": "value0",
                 "nodeType": "YulTypedName",
-                "src": "101:6:52",
+                "src": "101:6:44",
                 "type": ""
               }
             ],
@@ -153,53 +153,53 @@
               {
                 "name": "tail",
                 "nodeType": "YulTypedName",
-                "src": "112:4:52",
+                "src": "112:4:44",
                 "type": ""
               }
             ],
-            "src": "14:210:52"
+            "src": "14:210:44"
           }
         ]
       },
       "contents": "{\n    { }\n    function abi_encode_tuple_t_bytes4__to_t_bytes4__fromStack_library_reversed(headStart, value0) -> tail\n    {\n        tail := add(headStart, 32)\n        mstore(headStart, and(value0, shl(224, 0xffffffff)))\n    }\n}",
-      "id": 52,
+      "id": 44,
       "language": "Yul",
       "name": "#utility.yul"
     }
   ],
-  "sourceMap": "135:599:48:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "135:599:48:-:0;;;;;;;;;;;;;;;;;;;;;;;;162:51;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;197:15;162:51;:::o;14:210:52:-;-1:-1:-1;;;;;;184:33:52;;;;166:52;;154:2;139:18;;121:103::o",
+  "sourceMap": "135:599:7:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "135:599:7:-:0;;;;;;;;;;;;;;;;;;;;;;;;162:51;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;197:15;162:51;:::o;14:210:44:-;-1:-1:-1;;;;;;184:33:44;;;;166:52;;154:2;139:18;;121:103::o",
   "source": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.7.6;\npragma abicoder v2;\n\n/// @dev library that works with data field of Bid struct\nlibrary LibBidDataV1 {\n    bytes4 constant public V1 = bytes4(keccak256(\"V1\"));\n\n    /// @dev struct of Bid data field, version 1\n    struct DataV1 {\n        // auction originFees\n        uint originFee;\n    }\n\n    /// @dev returns parsed data field of a Bid (so returns DataV1 struct)\n    function parse(bytes memory data, bytes4 dataType) internal pure returns (DataV1 memory aucData) {\n        if (dataType == V1) {\n            if (data.length > 0){\n                aucData = abi.decode(data, (DataV1));\n            }  \n        } else {\n            revert(\"wrong bid dataType\");\n        }\n    }\n}\n",
-  "sourcePath": "/Users/ds/Documents/rarible/protocol-contracts/auction/contracts/libs/LibBidDataV1.sol",
+  "sourcePath": "/Users/quintin/Desktop/protocol-contracts/auction/contracts/libs/LibBidDataV1.sol",
   "ast": {
-    "absolutePath": "project:/contracts/libs/LibBidDataV1.sol",
+    "absolutePath": "/Users/quintin/Desktop/protocol-contracts/auction/contracts/libs/LibBidDataV1.sol",
     "exportedSymbols": {
       "LibBidDataV1": [
-        8137
+        3049
       ]
     },
-    "id": 8138,
+    "id": 3050,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 8087,
+        "id": 2999,
         "literals": [
           "solidity",
           "0.7",
           ".6"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:22:48"
+        "src": "33:22:7"
       },
       {
-        "id": 8088,
+        "id": 3000,
         "literals": [
           "abicoder",
           "v2"
         ],
         "nodeType": "PragmaDirective",
-        "src": "56:19:48"
+        "src": "56:19:7"
       },
       {
         "abstract": false,
@@ -207,15 +207,15 @@
         "contractDependencies": [],
         "contractKind": "library",
         "documentation": {
-          "id": 8089,
+          "id": 3001,
           "nodeType": "StructuredDocumentation",
-          "src": "77:58:48",
+          "src": "77:58:7",
           "text": "@dev library that works with data field of Bid struct"
         },
         "fullyImplemented": true,
-        "id": 8137,
+        "id": 3049,
         "linearizedBaseContracts": [
-          8137
+          3049
         ],
         "name": "LibBidDataV1",
         "nodeType": "ContractDefinition",
@@ -223,12 +223,12 @@
           {
             "constant": true,
             "functionSelector": "3ee569bf",
-            "id": 8097,
+            "id": 3009,
             "mutability": "constant",
             "name": "V1",
             "nodeType": "VariableDeclaration",
-            "scope": 8137,
-            "src": "162:51:48",
+            "scope": 3049,
+            "src": "162:51:7",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -236,10 +236,10 @@
               "typeString": "bytes4"
             },
             "typeName": {
-              "id": 8090,
+              "id": 3002,
               "name": "bytes4",
               "nodeType": "ElementaryTypeName",
-              "src": "162:6:48",
+              "src": "162:6:7",
               "typeDescriptions": {
                 "typeIdentifier": "t_bytes4",
                 "typeString": "bytes4"
@@ -251,14 +251,14 @@
                   "arguments": [
                     {
                       "hexValue": "5631",
-                      "id": 8094,
+                      "id": 3006,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "string",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "207:4:48",
+                      "src": "207:4:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_stringliteral_4c23426613a5dc69e08fbd2787e6210aa679d4522e95a89d4dd88c4fd13a2283",
                         "typeString": "literal_string \"V1\""
@@ -273,18 +273,18 @@
                         "typeString": "literal_string \"V1\""
                       }
                     ],
-                    "id": 8093,
+                    "id": 3005,
                     "name": "keccak256",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 4294967288,
-                    "src": "197:9:48",
+                    "src": "197:9:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
                       "typeString": "function (bytes memory) pure returns (bytes32)"
                     }
                   },
-                  "id": 8095,
+                  "id": 3007,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -292,7 +292,7 @@
                   "lValueRequested": false,
                   "names": [],
                   "nodeType": "FunctionCall",
-                  "src": "197:15:48",
+                  "src": "197:15:7",
                   "tryCall": false,
                   "typeDescriptions": {
                     "typeIdentifier": "t_bytes32",
@@ -307,26 +307,26 @@
                     "typeString": "bytes32"
                   }
                 ],
-                "id": 8092,
+                "id": 3004,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "lValueRequested": false,
                 "nodeType": "ElementaryTypeNameExpression",
-                "src": "190:6:48",
+                "src": "190:6:7",
                 "typeDescriptions": {
                   "typeIdentifier": "t_type$_t_bytes4_$",
                   "typeString": "type(bytes4)"
                 },
                 "typeName": {
-                  "id": 8091,
+                  "id": 3003,
                   "name": "bytes4",
                   "nodeType": "ElementaryTypeName",
-                  "src": "190:6:48",
+                  "src": "190:6:7",
                   "typeDescriptions": {}
                 }
               },
-              "id": 8096,
+              "id": 3008,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -334,7 +334,7 @@
               "lValueRequested": false,
               "names": [],
               "nodeType": "FunctionCall",
-              "src": "190:23:48",
+              "src": "190:23:7",
               "tryCall": false,
               "typeDescriptions": {
                 "typeIdentifier": "t_bytes4",
@@ -345,16 +345,16 @@
           },
           {
             "canonicalName": "LibBidDataV1.DataV1",
-            "id": 8100,
+            "id": 3012,
             "members": [
               {
                 "constant": false,
-                "id": 8099,
+                "id": 3011,
                 "mutability": "mutable",
                 "name": "originFee",
                 "nodeType": "VariableDeclaration",
-                "scope": 8100,
-                "src": "323:14:48",
+                "scope": 3012,
+                "src": "323:14:7",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -362,10 +362,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 8098,
+                  "id": 3010,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
-                  "src": "323:4:48",
+                  "src": "323:4:7",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -376,15 +376,15 @@
             ],
             "name": "DataV1",
             "nodeType": "StructDefinition",
-            "scope": 8137,
-            "src": "269:75:48",
+            "scope": 3049,
+            "src": "269:75:7",
             "visibility": "public"
           },
           {
             "body": {
-              "id": 8135,
+              "id": 3047,
               "nodeType": "Block",
-              "src": "522:210:48",
+              "src": "522:210:7",
               "statements": [
                 {
                   "condition": {
@@ -392,18 +392,18 @@
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
                     },
-                    "id": 8112,
+                    "id": 3024,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 8110,
+                      "id": 3022,
                       "name": "dataType",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8105,
-                      "src": "536:8:48",
+                      "referencedDeclaration": 3017,
+                      "src": "536:8:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes4",
                         "typeString": "bytes4"
@@ -412,41 +412,41 @@
                     "nodeType": "BinaryOperation",
                     "operator": "==",
                     "rightExpression": {
-                      "id": 8111,
+                      "id": 3023,
                       "name": "V1",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8097,
-                      "src": "548:2:48",
+                      "referencedDeclaration": 3009,
+                      "src": "548:2:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes4",
                         "typeString": "bytes4"
                       }
                     },
-                    "src": "536:14:48",
+                    "src": "536:14:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
                   "falseBody": {
-                    "id": 8133,
+                    "id": 3045,
                     "nodeType": "Block",
-                    "src": "673:53:48",
+                    "src": "673:53:7",
                     "statements": [
                       {
                         "expression": {
                           "arguments": [
                             {
                               "hexValue": "77726f6e6720626964206461746154797065",
-                              "id": 8130,
+                              "id": 3042,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
                               "kind": "string",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "694:20:48",
+                              "src": "694:20:7",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_stringliteral_e3a6bb45fd8586d53521ce3ac36b679730439cff1bd487329c375dfe24e215f7",
                                 "typeString": "literal_string \"wrong bid dataType\""
@@ -461,7 +461,7 @@
                                 "typeString": "literal_string \"wrong bid dataType\""
                               }
                             ],
-                            "id": 8129,
+                            "id": 3041,
                             "name": "revert",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [
@@ -469,13 +469,13 @@
                               4294967277
                             ],
                             "referencedDeclaration": 4294967277,
-                            "src": "687:6:48",
+                            "src": "687:6:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_revert_pure$_t_string_memory_ptr_$returns$__$",
                               "typeString": "function (string memory) pure"
                             }
                           },
-                          "id": 8131,
+                          "id": 3043,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -483,26 +483,26 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "687:28:48",
+                          "src": "687:28:7",
                           "tryCall": false,
                           "typeDescriptions": {
                             "typeIdentifier": "t_tuple$__$",
                             "typeString": "tuple()"
                           }
                         },
-                        "id": 8132,
+                        "id": 3044,
                         "nodeType": "ExpressionStatement",
-                        "src": "687:28:48"
+                        "src": "687:28:7"
                       }
                     ]
                   },
-                  "id": 8134,
+                  "id": 3046,
                   "nodeType": "IfStatement",
-                  "src": "532:194:48",
+                  "src": "532:194:7",
                   "trueBody": {
-                    "id": 8128,
+                    "id": 3040,
                     "nodeType": "Block",
-                    "src": "552:115:48",
+                    "src": "552:115:7",
                     "statements": [
                       {
                         "condition": {
@@ -510,32 +510,32 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 8116,
+                          "id": 3028,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
                             "expression": {
-                              "id": 8113,
+                              "id": 3025,
                               "name": "data",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 8103,
-                              "src": "570:4:48",
+                              "referencedDeclaration": 3015,
+                              "src": "570:4:7",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bytes_memory_ptr",
                                 "typeString": "bytes memory"
                               }
                             },
-                            "id": 8114,
+                            "id": 3026,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "length",
                             "nodeType": "MemberAccess",
-                            "src": "570:11:48",
+                            "src": "570:11:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -545,50 +545,50 @@
                           "operator": ">",
                           "rightExpression": {
                             "hexValue": "30",
-                            "id": 8115,
+                            "id": 3027,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "584:1:48",
+                            "src": "584:1:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_rational_0_by_1",
                               "typeString": "int_const 0"
                             },
                             "value": "0"
                           },
-                          "src": "570:15:48",
+                          "src": "570:15:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
                           }
                         },
-                        "id": 8127,
+                        "id": 3039,
                         "nodeType": "IfStatement",
-                        "src": "566:89:48",
+                        "src": "566:89:7",
                         "trueBody": {
-                          "id": 8126,
+                          "id": 3038,
                           "nodeType": "Block",
-                          "src": "586:69:48",
+                          "src": "586:69:7",
                           "statements": [
                             {
                               "expression": {
-                                "id": 8124,
+                                "id": 3036,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "leftHandSide": {
-                                  "id": 8117,
+                                  "id": 3029,
                                   "name": "aucData",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 8108,
-                                  "src": "604:7:48",
+                                  "referencedDeclaration": 3020,
+                                  "src": "604:7:7",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_DataV1_$8100_memory_ptr",
+                                    "typeIdentifier": "t_struct$_DataV1_$3012_memory_ptr",
                                     "typeString": "struct LibBidDataV1.DataV1 memory"
                                   }
                                 },
@@ -597,12 +597,12 @@
                                 "rightHandSide": {
                                   "arguments": [
                                     {
-                                      "id": 8120,
+                                      "id": 3032,
                                       "name": "data",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 8103,
-                                      "src": "625:4:48",
+                                      "referencedDeclaration": 3015,
+                                      "src": "625:4:7",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_bytes_memory_ptr",
                                         "typeString": "bytes memory"
@@ -611,28 +611,28 @@
                                     {
                                       "components": [
                                         {
-                                          "id": 8121,
+                                          "id": 3033,
                                           "name": "DataV1",
                                           "nodeType": "Identifier",
                                           "overloadedDeclarations": [],
-                                          "referencedDeclaration": 8100,
-                                          "src": "632:6:48",
+                                          "referencedDeclaration": 3012,
+                                          "src": "632:6:7",
                                           "typeDescriptions": {
-                                            "typeIdentifier": "t_type$_t_struct$_DataV1_$8100_storage_ptr_$",
+                                            "typeIdentifier": "t_type$_t_struct$_DataV1_$3012_storage_ptr_$",
                                             "typeString": "type(struct LibBidDataV1.DataV1 storage pointer)"
                                           }
                                         }
                                       ],
-                                      "id": 8122,
+                                      "id": 3034,
                                       "isConstant": false,
                                       "isInlineArray": false,
                                       "isLValue": false,
                                       "isPure": true,
                                       "lValueRequested": false,
                                       "nodeType": "TupleExpression",
-                                      "src": "631:8:48",
+                                      "src": "631:8:7",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_type$_t_struct$_DataV1_$8100_storage_ptr_$",
+                                        "typeIdentifier": "t_type$_t_struct$_DataV1_$3012_storage_ptr_$",
                                         "typeString": "type(struct LibBidDataV1.DataV1 storage pointer)"
                                       }
                                     }
@@ -644,36 +644,36 @@
                                         "typeString": "bytes memory"
                                       },
                                       {
-                                        "typeIdentifier": "t_type$_t_struct$_DataV1_$8100_storage_ptr_$",
+                                        "typeIdentifier": "t_type$_t_struct$_DataV1_$3012_storage_ptr_$",
                                         "typeString": "type(struct LibBidDataV1.DataV1 storage pointer)"
                                       }
                                     ],
                                     "expression": {
-                                      "id": 8118,
+                                      "id": 3030,
                                       "name": "abi",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
                                       "referencedDeclaration": 4294967295,
-                                      "src": "614:3:48",
+                                      "src": "614:3:7",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_magic_abi",
                                         "typeString": "abi"
                                       }
                                     },
-                                    "id": 8119,
+                                    "id": 3031,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
                                     "lValueRequested": false,
                                     "memberName": "decode",
                                     "nodeType": "MemberAccess",
-                                    "src": "614:10:48",
+                                    "src": "614:10:7",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_function_abidecode_pure$__$returns$__$",
                                       "typeString": "function () pure"
                                     }
                                   },
-                                  "id": 8123,
+                                  "id": 3035,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": false,
@@ -681,22 +681,22 @@
                                   "lValueRequested": false,
                                   "names": [],
                                   "nodeType": "FunctionCall",
-                                  "src": "614:26:48",
+                                  "src": "614:26:7",
                                   "tryCall": false,
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_DataV1_$8100_memory_ptr",
+                                    "typeIdentifier": "t_struct$_DataV1_$3012_memory_ptr",
                                     "typeString": "struct LibBidDataV1.DataV1 memory"
                                   }
                                 },
-                                "src": "604:36:48",
+                                "src": "604:36:7",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_DataV1_$8100_memory_ptr",
+                                  "typeIdentifier": "t_struct$_DataV1_$3012_memory_ptr",
                                   "typeString": "struct LibBidDataV1.DataV1 memory"
                                 }
                               },
-                              "id": 8125,
+                              "id": 3037,
                               "nodeType": "ExpressionStatement",
-                              "src": "604:36:48"
+                              "src": "604:36:7"
                             }
                           ]
                         }
@@ -707,29 +707,29 @@
               ]
             },
             "documentation": {
-              "id": 8101,
+              "id": 3013,
               "nodeType": "StructuredDocumentation",
-              "src": "350:70:48",
+              "src": "350:70:7",
               "text": "@dev returns parsed data field of a Bid (so returns DataV1 struct)"
             },
-            "id": 8136,
+            "id": 3048,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "parse",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8106,
+              "id": 3018,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8103,
+                  "id": 3015,
                   "mutability": "mutable",
                   "name": "data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8136,
-                  "src": "440:17:48",
+                  "scope": 3048,
+                  "src": "440:17:7",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -737,10 +737,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 8102,
+                    "id": 3014,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "440:5:48",
+                    "src": "440:5:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -750,12 +750,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 8105,
+                  "id": 3017,
                   "mutability": "mutable",
                   "name": "dataType",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8136,
-                  "src": "459:15:48",
+                  "scope": 3048,
+                  "src": "459:15:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -763,10 +763,10 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 8104,
+                    "id": 3016,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
-                    "src": "459:6:48",
+                    "src": "459:6:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
@@ -775,61 +775,61 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "439:36:48"
+              "src": "439:36:7"
             },
             "returnParameters": {
-              "id": 8109,
+              "id": 3021,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8108,
+                  "id": 3020,
                   "mutability": "mutable",
                   "name": "aucData",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8136,
-                  "src": "499:21:48",
+                  "scope": 3048,
+                  "src": "499:21:7",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_DataV1_$8100_memory_ptr",
+                    "typeIdentifier": "t_struct$_DataV1_$3012_memory_ptr",
                     "typeString": "struct LibBidDataV1.DataV1"
                   },
                   "typeName": {
-                    "id": 8107,
+                    "id": 3019,
                     "name": "DataV1",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 8100,
-                    "src": "499:6:48",
+                    "referencedDeclaration": 3012,
+                    "src": "499:6:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_DataV1_$8100_storage_ptr",
+                      "typeIdentifier": "t_struct$_DataV1_$3012_storage_ptr",
                       "typeString": "struct LibBidDataV1.DataV1"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "498:23:48"
+              "src": "498:23:7"
             },
-            "scope": 8137,
-            "src": "425:307:48",
+            "scope": 3049,
+            "src": "425:307:7",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 8138,
-        "src": "135:599:48"
+        "scope": 3050,
+        "src": "135:599:7"
       }
     ],
-    "src": "33:702:48"
+    "src": "33:702:7"
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "project:/contracts/libs/LibBidDataV1.sol",
+      "absolutePath": "/Users/quintin/Desktop/protocol-contracts/auction/contracts/libs/LibBidDataV1.sol",
       "exportedSymbols": {
         "LibBidDataV1": [
-          8137
+          3049
         ]
       },
       "license": "MIT"
@@ -843,9 +843,9 @@
             ".6"
           ]
         },
-        "id": 8087,
+        "id": 2999,
         "name": "PragmaDirective",
-        "src": "33:22:48"
+        "src": "33:22:7"
       },
       {
         "attributes": {
@@ -854,9 +854,9 @@
             "v2"
           ]
         },
-        "id": 8088,
+        "id": 3000,
         "name": "PragmaDirective",
-        "src": "56:19:48"
+        "src": "56:19:7"
       },
       {
         "attributes": {
@@ -870,19 +870,19 @@
           "contractKind": "library",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            8137
+            3049
           ],
           "name": "LibBidDataV1",
-          "scope": 8138
+          "scope": 3050
         },
         "children": [
           {
             "attributes": {
               "text": "@dev library that works with data field of Bid struct"
             },
-            "id": 8089,
+            "id": 3001,
             "name": "StructuredDocumentation",
-            "src": "77:58:48"
+            "src": "77:58:7"
           },
           {
             "attributes": {
@@ -890,7 +890,7 @@
               "functionSelector": "3ee569bf",
               "mutability": "constant",
               "name": "V1",
-              "scope": 8137,
+              "scope": 3049,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "bytes4",
@@ -902,9 +902,9 @@
                   "name": "bytes4",
                   "type": "bytes4"
                 },
-                "id": 8090,
+                "id": 3002,
                 "name": "ElementaryTypeName",
-                "src": "162:6:48"
+                "src": "162:6:7"
               },
               {
                 "attributes": {
@@ -940,14 +940,14 @@
                         "attributes": {
                           "name": "bytes4"
                         },
-                        "id": 8091,
+                        "id": 3003,
                         "name": "ElementaryTypeName",
-                        "src": "190:6:48"
+                        "src": "190:6:7"
                       }
                     ],
-                    "id": 8092,
+                    "id": 3004,
                     "name": "ElementaryTypeNameExpression",
-                    "src": "190:6:48"
+                    "src": "190:6:7"
                   },
                   {
                     "attributes": {
@@ -979,9 +979,9 @@
                           "type": "function (bytes memory) pure returns (bytes32)",
                           "value": "keccak256"
                         },
-                        "id": 8093,
+                        "id": 3005,
                         "name": "Identifier",
-                        "src": "197:9:48"
+                        "src": "197:9:7"
                       },
                       {
                         "attributes": {
@@ -994,30 +994,30 @@
                           "type": "literal_string \"V1\"",
                           "value": "V1"
                         },
-                        "id": 8094,
+                        "id": 3006,
                         "name": "Literal",
-                        "src": "207:4:48"
+                        "src": "207:4:7"
                       }
                     ],
-                    "id": 8095,
+                    "id": 3007,
                     "name": "FunctionCall",
-                    "src": "197:15:48"
+                    "src": "197:15:7"
                   }
                 ],
-                "id": 8096,
+                "id": 3008,
                 "name": "FunctionCall",
-                "src": "190:23:48"
+                "src": "190:23:7"
               }
             ],
-            "id": 8097,
+            "id": 3009,
             "name": "VariableDeclaration",
-            "src": "162:51:48"
+            "src": "162:51:7"
           },
           {
             "attributes": {
               "canonicalName": "LibBidDataV1.DataV1",
               "name": "DataV1",
-              "scope": 8137,
+              "scope": 3049,
               "visibility": "public"
             },
             "children": [
@@ -1026,7 +1026,7 @@
                   "constant": false,
                   "mutability": "mutable",
                   "name": "originFee",
-                  "scope": 8100,
+                  "scope": 3012,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -1038,19 +1038,19 @@
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 8098,
+                    "id": 3010,
                     "name": "ElementaryTypeName",
-                    "src": "323:4:48"
+                    "src": "323:4:7"
                   }
                 ],
-                "id": 8099,
+                "id": 3011,
                 "name": "VariableDeclaration",
-                "src": "323:14:48"
+                "src": "323:14:7"
               }
             ],
-            "id": 8100,
+            "id": 3012,
             "name": "StructDefinition",
-            "src": "269:75:48"
+            "src": "269:75:7"
           },
           {
             "attributes": {
@@ -1061,7 +1061,7 @@
                 null
               ],
               "name": "parse",
-              "scope": 8137,
+              "scope": 3049,
               "stateMutability": "pure",
               "virtual": false,
               "visibility": "internal"
@@ -1071,9 +1071,9 @@
                 "attributes": {
                   "text": "@dev returns parsed data field of a Bid (so returns DataV1 struct)"
                 },
-                "id": 8101,
+                "id": 3013,
                 "name": "StructuredDocumentation",
-                "src": "350:70:48"
+                "src": "350:70:7"
               },
               {
                 "children": [
@@ -1082,7 +1082,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "data",
-                      "scope": 8136,
+                      "scope": 3048,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "bytes",
@@ -1094,21 +1094,21 @@
                           "name": "bytes",
                           "type": "bytes"
                         },
-                        "id": 8102,
+                        "id": 3014,
                         "name": "ElementaryTypeName",
-                        "src": "440:5:48"
+                        "src": "440:5:7"
                       }
                     ],
-                    "id": 8103,
+                    "id": 3015,
                     "name": "VariableDeclaration",
-                    "src": "440:17:48"
+                    "src": "440:17:7"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "mutability": "mutable",
                       "name": "dataType",
-                      "scope": 8136,
+                      "scope": 3048,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bytes4",
@@ -1120,19 +1120,19 @@
                           "name": "bytes4",
                           "type": "bytes4"
                         },
-                        "id": 8104,
+                        "id": 3016,
                         "name": "ElementaryTypeName",
-                        "src": "459:6:48"
+                        "src": "459:6:7"
                       }
                     ],
-                    "id": 8105,
+                    "id": 3017,
                     "name": "VariableDeclaration",
-                    "src": "459:15:48"
+                    "src": "459:15:7"
                   }
                 ],
-                "id": 8106,
+                "id": 3018,
                 "name": "ParameterList",
-                "src": "439:36:48"
+                "src": "439:36:7"
               },
               {
                 "children": [
@@ -1141,7 +1141,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "aucData",
-                      "scope": 8136,
+                      "scope": 3048,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "struct LibBidDataV1.DataV1",
@@ -1151,22 +1151,22 @@
                       {
                         "attributes": {
                           "name": "DataV1",
-                          "referencedDeclaration": 8100,
+                          "referencedDeclaration": 3012,
                           "type": "struct LibBidDataV1.DataV1"
                         },
-                        "id": 8107,
+                        "id": 3019,
                         "name": "UserDefinedTypeName",
-                        "src": "499:6:48"
+                        "src": "499:6:7"
                       }
                     ],
-                    "id": 8108,
+                    "id": 3020,
                     "name": "VariableDeclaration",
-                    "src": "499:21:48"
+                    "src": "499:21:7"
                   }
                 ],
-                "id": 8109,
+                "id": 3021,
                 "name": "ParameterList",
-                "src": "498:23:48"
+                "src": "498:23:7"
               },
               {
                 "children": [
@@ -1191,31 +1191,31 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 8105,
+                              "referencedDeclaration": 3017,
                               "type": "bytes4",
                               "value": "dataType"
                             },
-                            "id": 8110,
+                            "id": 3022,
                             "name": "Identifier",
-                            "src": "536:8:48"
+                            "src": "536:8:7"
                           },
                           {
                             "attributes": {
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 8097,
+                              "referencedDeclaration": 3009,
                               "type": "bytes4",
                               "value": "V1"
                             },
-                            "id": 8111,
+                            "id": 3023,
                             "name": "Identifier",
-                            "src": "548:2:48"
+                            "src": "548:2:7"
                           }
                         ],
-                        "id": 8112,
+                        "id": 3024,
                         "name": "BinaryOperation",
-                        "src": "536:14:48"
+                        "src": "536:14:7"
                       },
                       {
                         "children": [
@@ -1251,18 +1251,18 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 8103,
+                                          "referencedDeclaration": 3015,
                                           "type": "bytes memory",
                                           "value": "data"
                                         },
-                                        "id": 8113,
+                                        "id": 3025,
                                         "name": "Identifier",
-                                        "src": "570:4:48"
+                                        "src": "570:4:7"
                                       }
                                     ],
-                                    "id": 8114,
+                                    "id": 3026,
                                     "name": "MemberAccess",
-                                    "src": "570:11:48"
+                                    "src": "570:11:7"
                                   },
                                   {
                                     "attributes": {
@@ -1275,14 +1275,14 @@
                                       "type": "int_const 0",
                                       "value": "0"
                                     },
-                                    "id": 8115,
+                                    "id": 3027,
                                     "name": "Literal",
-                                    "src": "584:1:48"
+                                    "src": "584:1:7"
                                   }
                                 ],
-                                "id": 8116,
+                                "id": 3028,
                                 "name": "BinaryOperation",
-                                "src": "570:15:48"
+                                "src": "570:15:7"
                               },
                               {
                                 "children": [
@@ -1303,13 +1303,13 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 8108,
+                                              "referencedDeclaration": 3020,
                                               "type": "struct LibBidDataV1.DataV1 memory",
                                               "value": "aucData"
                                             },
-                                            "id": 8117,
+                                            "id": 3029,
                                             "name": "Identifier",
-                                            "src": "604:7:48"
+                                            "src": "604:7:7"
                                           },
                                           {
                                             "attributes": {
@@ -1334,7 +1334,7 @@
                                                       "typeString": "bytes memory"
                                                     },
                                                     {
-                                                      "typeIdentifier": "t_type$_t_struct$_DataV1_$8100_storage_ptr_$",
+                                                      "typeIdentifier": "t_type$_t_struct$_DataV1_$3012_storage_ptr_$",
                                                       "typeString": "type(struct LibBidDataV1.DataV1 storage pointer)"
                                                     }
                                                   ],
@@ -1355,27 +1355,27 @@
                                                       "type": "abi",
                                                       "value": "abi"
                                                     },
-                                                    "id": 8118,
+                                                    "id": 3030,
                                                     "name": "Identifier",
-                                                    "src": "614:3:48"
+                                                    "src": "614:3:7"
                                                   }
                                                 ],
-                                                "id": 8119,
+                                                "id": 3031,
                                                 "name": "MemberAccess",
-                                                "src": "614:10:48"
+                                                "src": "614:10:7"
                                               },
                                               {
                                                 "attributes": {
                                                   "overloadedDeclarations": [
                                                     null
                                                   ],
-                                                  "referencedDeclaration": 8103,
+                                                  "referencedDeclaration": 3015,
                                                   "type": "bytes memory",
                                                   "value": "data"
                                                 },
-                                                "id": 8120,
+                                                "id": 3032,
                                                 "name": "Identifier",
-                                                "src": "625:4:48"
+                                                "src": "625:4:7"
                                               },
                                               {
                                                 "attributes": {
@@ -1392,48 +1392,48 @@
                                                       "overloadedDeclarations": [
                                                         null
                                                       ],
-                                                      "referencedDeclaration": 8100,
+                                                      "referencedDeclaration": 3012,
                                                       "type": "type(struct LibBidDataV1.DataV1 storage pointer)",
                                                       "value": "DataV1"
                                                     },
-                                                    "id": 8121,
+                                                    "id": 3033,
                                                     "name": "Identifier",
-                                                    "src": "632:6:48"
+                                                    "src": "632:6:7"
                                                   }
                                                 ],
-                                                "id": 8122,
+                                                "id": 3034,
                                                 "name": "TupleExpression",
-                                                "src": "631:8:48"
+                                                "src": "631:8:7"
                                               }
                                             ],
-                                            "id": 8123,
+                                            "id": 3035,
                                             "name": "FunctionCall",
-                                            "src": "614:26:48"
+                                            "src": "614:26:7"
                                           }
                                         ],
-                                        "id": 8124,
+                                        "id": 3036,
                                         "name": "Assignment",
-                                        "src": "604:36:48"
+                                        "src": "604:36:7"
                                       }
                                     ],
-                                    "id": 8125,
+                                    "id": 3037,
                                     "name": "ExpressionStatement",
-                                    "src": "604:36:48"
+                                    "src": "604:36:7"
                                   }
                                 ],
-                                "id": 8126,
+                                "id": 3038,
                                 "name": "Block",
-                                "src": "586:69:48"
+                                "src": "586:69:7"
                               }
                             ],
-                            "id": 8127,
+                            "id": 3039,
                             "name": "IfStatement",
-                            "src": "566:89:48"
+                            "src": "566:89:7"
                           }
                         ],
-                        "id": 8128,
+                        "id": 3040,
                         "name": "Block",
-                        "src": "552:115:48"
+                        "src": "552:115:7"
                       },
                       {
                         "children": [
@@ -1470,9 +1470,9 @@
                                       "type": "function (string memory) pure",
                                       "value": "revert"
                                     },
-                                    "id": 8129,
+                                    "id": 3041,
                                     "name": "Identifier",
-                                    "src": "687:6:48"
+                                    "src": "687:6:7"
                                   },
                                   {
                                     "attributes": {
@@ -1485,57 +1485,57 @@
                                       "type": "literal_string \"wrong bid dataType\"",
                                       "value": "wrong bid dataType"
                                     },
-                                    "id": 8130,
+                                    "id": 3042,
                                     "name": "Literal",
-                                    "src": "694:20:48"
+                                    "src": "694:20:7"
                                   }
                                 ],
-                                "id": 8131,
+                                "id": 3043,
                                 "name": "FunctionCall",
-                                "src": "687:28:48"
+                                "src": "687:28:7"
                               }
                             ],
-                            "id": 8132,
+                            "id": 3044,
                             "name": "ExpressionStatement",
-                            "src": "687:28:48"
+                            "src": "687:28:7"
                           }
                         ],
-                        "id": 8133,
+                        "id": 3045,
                         "name": "Block",
-                        "src": "673:53:48"
+                        "src": "673:53:7"
                       }
                     ],
-                    "id": 8134,
+                    "id": 3046,
                     "name": "IfStatement",
-                    "src": "532:194:48"
+                    "src": "532:194:7"
                   }
                 ],
-                "id": 8135,
+                "id": 3047,
                 "name": "Block",
-                "src": "522:210:48"
+                "src": "522:210:7"
               }
             ],
-            "id": 8136,
+            "id": 3048,
             "name": "FunctionDefinition",
-            "src": "425:307:48"
+            "src": "425:307:7"
           }
         ],
-        "id": 8137,
+        "id": 3049,
         "name": "ContractDefinition",
-        "src": "135:599:48"
+        "src": "135:599:7"
       }
     ],
-    "id": 8138,
+    "id": 3050,
     "name": "SourceUnit",
-    "src": "33:702:48"
+    "src": "33:702:7"
   },
   "compiler": {
     "name": "solc",
     "version": "0.7.6+commit.7338295f.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.3",
-  "updatedAt": "2022-03-11T07:16:37.810Z",
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2022-08-04T07:15:50.595Z",
   "devdoc": {
     "details": "library that works with data field of Bid struct",
     "kind": "dev",

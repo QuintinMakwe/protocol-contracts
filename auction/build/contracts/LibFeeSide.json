@@ -1,48 +1,48 @@
 {
   "contractName": "LibFeeSide",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@rarible/libraries/contracts/LibFeeSide.sol\":\"LibFeeSide\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@rarible/lib-asset/contracts/LibAsset.sol\":{\"keccak256\":\"0x5d63bba4747a12a83c5628dba94bf56714b4dcf94f742ff28863034831061c8a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9826768c7f5c5423d9bbf49be50bd21ed2db5374ee47648150e50aa10e3c0151\",\"dweb:/ipfs/Qmex4xCv4MFRfCxMNZzzsKXYAFxbYWQRFsbaHiJfDTozYG\"]},\"@rarible/libraries/contracts/LibFeeSide.sol\":{\"keccak256\":\"0xbbb3298e900bd2b0b5bc934fb3e006ff876b8fae6310675e82d35e949e1c039b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4a89218f4574b6819325391df194e287b07c7bf0d8f5f33713cf8f1ea642ab11\",\"dweb:/ipfs/QmRRWsL3jn8y7wRQdJehQU9cFo8UFzDWRf3MpzR2TKb5Fd\"]}},\"version\":1}",
-  "bytecode": "0x60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212202a81da65db9b6a8ebab95e852ed6e2431e93868ddd60c6a2ead489050825458064736f6c63430007060033",
-  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212202a81da65db9b6a8ebab95e852ed6e2431e93868ddd60c6a2ead489050825458064736f6c63430007060033",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@rarible/transfer-manager/contracts/lib/LibFeeSide.sol\":\"LibFeeSide\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@rarible/lib-asset/contracts/LibAsset.sol\":{\"keccak256\":\"0x5d63bba4747a12a83c5628dba94bf56714b4dcf94f742ff28863034831061c8a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9826768c7f5c5423d9bbf49be50bd21ed2db5374ee47648150e50aa10e3c0151\",\"dweb:/ipfs/Qmex4xCv4MFRfCxMNZzzsKXYAFxbYWQRFsbaHiJfDTozYG\"]},\"@rarible/transfer-manager/contracts/lib/LibFeeSide.sol\":{\"keccak256\":\"0xbbb3298e900bd2b0b5bc934fb3e006ff876b8fae6310675e82d35e949e1c039b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4a89218f4574b6819325391df194e287b07c7bf0d8f5f33713cf8f1ea642ab11\",\"dweb:/ipfs/QmRRWsL3jn8y7wRQdJehQU9cFo8UFzDWRf3MpzR2TKb5Fd\"]}},\"version\":1}",
+  "bytecode": "0x60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122046c0e327479f744ed8e73516c528fe60d4ea6ba5141c55d2c2508556fd25f93f64736f6c63430007060033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122046c0e327479f744ed8e73516c528fe60d4ea6ba5141c55d2c2508556fd25f93f64736f6c63430007060033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [],
-  "sourceMap": "110:785:26:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "110:785:26:-:0;;;;;;;;",
+  "sourceMap": "110:785:42:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "110:785:42:-:0;;;;;;;;",
   "source": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.7.6;\n\nimport \"@rarible/lib-asset/contracts/LibAsset.sol\";\n\nlibrary LibFeeSide {\n\n    enum FeeSide {NONE, LEFT, RIGHT}\n\n    function getFeeSide(bytes4 leftClass, bytes4 rightClass) internal pure returns (FeeSide) {\n        if (leftClass == LibAsset.ETH_ASSET_CLASS) {\n            return FeeSide.LEFT;\n        }\n        if (rightClass == LibAsset.ETH_ASSET_CLASS) {\n            return FeeSide.RIGHT;\n        }\n        if (leftClass == LibAsset.ERC20_ASSET_CLASS) {\n            return FeeSide.LEFT;\n        }\n        if (rightClass == LibAsset.ERC20_ASSET_CLASS) {\n            return FeeSide.RIGHT;\n        }\n        if (leftClass == LibAsset.ERC1155_ASSET_CLASS) {\n            return FeeSide.LEFT;\n        }\n        if (rightClass == LibAsset.ERC1155_ASSET_CLASS) {\n            return FeeSide.RIGHT;\n        }\n        return FeeSide.NONE;\n    }\n}\n",
-  "sourcePath": "@rarible/libraries/contracts/LibFeeSide.sol",
+  "sourcePath": "@rarible/transfer-manager/contracts/lib/LibFeeSide.sol",
   "ast": {
-    "absolutePath": "@rarible/libraries/contracts/LibFeeSide.sol",
+    "absolutePath": "@rarible/transfer-manager/contracts/lib/LibFeeSide.sol",
     "exportedSymbols": {
       "LibAsset": [
-        2058
+        5389
       ],
       "LibFeeSide": [
-        2177
+        7007
       ]
     },
-    "id": 2178,
+    "id": 7008,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2104,
+        "id": 6934,
         "literals": [
           "solidity",
           "0.7",
           ".6"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:22:26"
+        "src": "33:22:42"
       },
       {
         "absolutePath": "@rarible/lib-asset/contracts/LibAsset.sol",
         "file": "@rarible/lib-asset/contracts/LibAsset.sol",
-        "id": 2105,
+        "id": 6935,
         "nodeType": "ImportDirective",
-        "scope": 2178,
-        "sourceUnit": 2059,
-        "src": "57:51:26",
+        "scope": 7008,
+        "sourceUnit": 5390,
+        "src": "57:51:42",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -52,45 +52,45 @@
         "contractDependencies": [],
         "contractKind": "library",
         "fullyImplemented": true,
-        "id": 2177,
+        "id": 7007,
         "linearizedBaseContracts": [
-          2177
+          7007
         ],
         "name": "LibFeeSide",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "LibFeeSide.FeeSide",
-            "id": 2109,
+            "id": 6939,
             "members": [
               {
-                "id": 2106,
+                "id": 6936,
                 "name": "NONE",
                 "nodeType": "EnumValue",
-                "src": "150:4:26"
+                "src": "150:4:42"
               },
               {
-                "id": 2107,
+                "id": 6937,
                 "name": "LEFT",
                 "nodeType": "EnumValue",
-                "src": "156:4:26"
+                "src": "156:4:42"
               },
               {
-                "id": 2108,
+                "id": 6938,
                 "name": "RIGHT",
                 "nodeType": "EnumValue",
-                "src": "162:5:26"
+                "src": "162:5:42"
               }
             ],
             "name": "FeeSide",
             "nodeType": "EnumDefinition",
-            "src": "136:32:26"
+            "src": "136:32:42"
           },
           {
             "body": {
-              "id": 2175,
+              "id": 7005,
               "nodeType": "Block",
-              "src": "263:630:26",
+              "src": "263:630:42",
               "statements": [
                 {
                   "condition": {
@@ -98,18 +98,18 @@
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
                     },
-                    "id": 2121,
+                    "id": 6951,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 2118,
+                      "id": 6948,
                       "name": "leftClass",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2111,
-                      "src": "277:9:26",
+                      "referencedDeclaration": 6941,
+                      "src": "277:9:42",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes4",
                         "typeString": "bytes4"
@@ -119,76 +119,76 @@
                     "operator": "==",
                     "rightExpression": {
                       "expression": {
-                        "id": 2119,
+                        "id": 6949,
                         "name": "LibAsset",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2058,
-                        "src": "290:8:26",
+                        "referencedDeclaration": 5389,
+                        "src": "290:8:42",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_LibAsset_$2058_$",
+                          "typeIdentifier": "t_type$_t_contract$_LibAsset_$5389_$",
                           "typeString": "type(library LibAsset)"
                         }
                       },
-                      "id": 2120,
+                      "id": 6950,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "ETH_ASSET_CLASS",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1955,
-                      "src": "290:24:26",
+                      "referencedDeclaration": 5286,
+                      "src": "290:24:42",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes4",
                         "typeString": "bytes4"
                       }
                     },
-                    "src": "277:37:26",
+                    "src": "277:37:42",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 2126,
+                  "id": 6956,
                   "nodeType": "IfStatement",
-                  "src": "273:87:26",
+                  "src": "273:87:42",
                   "trueBody": {
-                    "id": 2125,
+                    "id": 6955,
                     "nodeType": "Block",
-                    "src": "316:44:26",
+                    "src": "316:44:42",
                     "statements": [
                       {
                         "expression": {
                           "expression": {
-                            "id": 2122,
+                            "id": 6952,
                             "name": "FeeSide",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2109,
-                            "src": "337:7:26",
+                            "referencedDeclaration": 6939,
+                            "src": "337:7:42",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_enum$_FeeSide_$2109_$",
+                              "typeIdentifier": "t_type$_t_enum$_FeeSide_$6939_$",
                               "typeString": "type(enum LibFeeSide.FeeSide)"
                             }
                           },
-                          "id": 2123,
+                          "id": 6953,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "lValueRequested": false,
                           "memberName": "LEFT",
                           "nodeType": "MemberAccess",
-                          "src": "337:12:26",
+                          "src": "337:12:42",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_FeeSide_$2109",
+                            "typeIdentifier": "t_enum$_FeeSide_$6939",
                             "typeString": "enum LibFeeSide.FeeSide"
                           }
                         },
-                        "functionReturnParameters": 2117,
-                        "id": 2124,
+                        "functionReturnParameters": 6947,
+                        "id": 6954,
                         "nodeType": "Return",
-                        "src": "330:19:26"
+                        "src": "330:19:42"
                       }
                     ]
                   }
@@ -199,18 +199,18 @@
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
                     },
-                    "id": 2130,
+                    "id": 6960,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 2127,
+                      "id": 6957,
                       "name": "rightClass",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2113,
-                      "src": "373:10:26",
+                      "referencedDeclaration": 6943,
+                      "src": "373:10:42",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes4",
                         "typeString": "bytes4"
@@ -220,76 +220,76 @@
                     "operator": "==",
                     "rightExpression": {
                       "expression": {
-                        "id": 2128,
+                        "id": 6958,
                         "name": "LibAsset",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2058,
-                        "src": "387:8:26",
+                        "referencedDeclaration": 5389,
+                        "src": "387:8:42",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_LibAsset_$2058_$",
+                          "typeIdentifier": "t_type$_t_contract$_LibAsset_$5389_$",
                           "typeString": "type(library LibAsset)"
                         }
                       },
-                      "id": 2129,
+                      "id": 6959,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "ETH_ASSET_CLASS",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1955,
-                      "src": "387:24:26",
+                      "referencedDeclaration": 5286,
+                      "src": "387:24:42",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes4",
                         "typeString": "bytes4"
                       }
                     },
-                    "src": "373:38:26",
+                    "src": "373:38:42",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 2135,
+                  "id": 6965,
                   "nodeType": "IfStatement",
-                  "src": "369:89:26",
+                  "src": "369:89:42",
                   "trueBody": {
-                    "id": 2134,
+                    "id": 6964,
                     "nodeType": "Block",
-                    "src": "413:45:26",
+                    "src": "413:45:42",
                     "statements": [
                       {
                         "expression": {
                           "expression": {
-                            "id": 2131,
+                            "id": 6961,
                             "name": "FeeSide",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2109,
-                            "src": "434:7:26",
+                            "referencedDeclaration": 6939,
+                            "src": "434:7:42",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_enum$_FeeSide_$2109_$",
+                              "typeIdentifier": "t_type$_t_enum$_FeeSide_$6939_$",
                               "typeString": "type(enum LibFeeSide.FeeSide)"
                             }
                           },
-                          "id": 2132,
+                          "id": 6962,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "lValueRequested": false,
                           "memberName": "RIGHT",
                           "nodeType": "MemberAccess",
-                          "src": "434:13:26",
+                          "src": "434:13:42",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_FeeSide_$2109",
+                            "typeIdentifier": "t_enum$_FeeSide_$6939",
                             "typeString": "enum LibFeeSide.FeeSide"
                           }
                         },
-                        "functionReturnParameters": 2117,
-                        "id": 2133,
+                        "functionReturnParameters": 6947,
+                        "id": 6963,
                         "nodeType": "Return",
-                        "src": "427:20:26"
+                        "src": "427:20:42"
                       }
                     ]
                   }
@@ -300,18 +300,18 @@
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
                     },
-                    "id": 2139,
+                    "id": 6969,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 2136,
+                      "id": 6966,
                       "name": "leftClass",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2111,
-                      "src": "471:9:26",
+                      "referencedDeclaration": 6941,
+                      "src": "471:9:42",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes4",
                         "typeString": "bytes4"
@@ -321,76 +321,76 @@
                     "operator": "==",
                     "rightExpression": {
                       "expression": {
-                        "id": 2137,
+                        "id": 6967,
                         "name": "LibAsset",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2058,
-                        "src": "484:8:26",
+                        "referencedDeclaration": 5389,
+                        "src": "484:8:42",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_LibAsset_$2058_$",
+                          "typeIdentifier": "t_type$_t_contract$_LibAsset_$5389_$",
                           "typeString": "type(library LibAsset)"
                         }
                       },
-                      "id": 2138,
+                      "id": 6968,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "ERC20_ASSET_CLASS",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1963,
-                      "src": "484:26:26",
+                      "referencedDeclaration": 5294,
+                      "src": "484:26:42",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes4",
                         "typeString": "bytes4"
                       }
                     },
-                    "src": "471:39:26",
+                    "src": "471:39:42",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 2144,
+                  "id": 6974,
                   "nodeType": "IfStatement",
-                  "src": "467:89:26",
+                  "src": "467:89:42",
                   "trueBody": {
-                    "id": 2143,
+                    "id": 6973,
                     "nodeType": "Block",
-                    "src": "512:44:26",
+                    "src": "512:44:42",
                     "statements": [
                       {
                         "expression": {
                           "expression": {
-                            "id": 2140,
+                            "id": 6970,
                             "name": "FeeSide",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2109,
-                            "src": "533:7:26",
+                            "referencedDeclaration": 6939,
+                            "src": "533:7:42",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_enum$_FeeSide_$2109_$",
+                              "typeIdentifier": "t_type$_t_enum$_FeeSide_$6939_$",
                               "typeString": "type(enum LibFeeSide.FeeSide)"
                             }
                           },
-                          "id": 2141,
+                          "id": 6971,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "lValueRequested": false,
                           "memberName": "LEFT",
                           "nodeType": "MemberAccess",
-                          "src": "533:12:26",
+                          "src": "533:12:42",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_FeeSide_$2109",
+                            "typeIdentifier": "t_enum$_FeeSide_$6939",
                             "typeString": "enum LibFeeSide.FeeSide"
                           }
                         },
-                        "functionReturnParameters": 2117,
-                        "id": 2142,
+                        "functionReturnParameters": 6947,
+                        "id": 6972,
                         "nodeType": "Return",
-                        "src": "526:19:26"
+                        "src": "526:19:42"
                       }
                     ]
                   }
@@ -401,18 +401,18 @@
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
                     },
-                    "id": 2148,
+                    "id": 6978,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 2145,
+                      "id": 6975,
                       "name": "rightClass",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2113,
-                      "src": "569:10:26",
+                      "referencedDeclaration": 6943,
+                      "src": "569:10:42",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes4",
                         "typeString": "bytes4"
@@ -422,76 +422,76 @@
                     "operator": "==",
                     "rightExpression": {
                       "expression": {
-                        "id": 2146,
+                        "id": 6976,
                         "name": "LibAsset",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2058,
-                        "src": "583:8:26",
+                        "referencedDeclaration": 5389,
+                        "src": "583:8:42",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_LibAsset_$2058_$",
+                          "typeIdentifier": "t_type$_t_contract$_LibAsset_$5389_$",
                           "typeString": "type(library LibAsset)"
                         }
                       },
-                      "id": 2147,
+                      "id": 6977,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "ERC20_ASSET_CLASS",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1963,
-                      "src": "583:26:26",
+                      "referencedDeclaration": 5294,
+                      "src": "583:26:42",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes4",
                         "typeString": "bytes4"
                       }
                     },
-                    "src": "569:40:26",
+                    "src": "569:40:42",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 2153,
+                  "id": 6983,
                   "nodeType": "IfStatement",
-                  "src": "565:91:26",
+                  "src": "565:91:42",
                   "trueBody": {
-                    "id": 2152,
+                    "id": 6982,
                     "nodeType": "Block",
-                    "src": "611:45:26",
+                    "src": "611:45:42",
                     "statements": [
                       {
                         "expression": {
                           "expression": {
-                            "id": 2149,
+                            "id": 6979,
                             "name": "FeeSide",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2109,
-                            "src": "632:7:26",
+                            "referencedDeclaration": 6939,
+                            "src": "632:7:42",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_enum$_FeeSide_$2109_$",
+                              "typeIdentifier": "t_type$_t_enum$_FeeSide_$6939_$",
                               "typeString": "type(enum LibFeeSide.FeeSide)"
                             }
                           },
-                          "id": 2150,
+                          "id": 6980,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "lValueRequested": false,
                           "memberName": "RIGHT",
                           "nodeType": "MemberAccess",
-                          "src": "632:13:26",
+                          "src": "632:13:42",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_FeeSide_$2109",
+                            "typeIdentifier": "t_enum$_FeeSide_$6939",
                             "typeString": "enum LibFeeSide.FeeSide"
                           }
                         },
-                        "functionReturnParameters": 2117,
-                        "id": 2151,
+                        "functionReturnParameters": 6947,
+                        "id": 6981,
                         "nodeType": "Return",
-                        "src": "625:20:26"
+                        "src": "625:20:42"
                       }
                     ]
                   }
@@ -502,18 +502,18 @@
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
                     },
-                    "id": 2157,
+                    "id": 6987,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 2154,
+                      "id": 6984,
                       "name": "leftClass",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2111,
-                      "src": "669:9:26",
+                      "referencedDeclaration": 6941,
+                      "src": "669:9:42",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes4",
                         "typeString": "bytes4"
@@ -523,76 +523,76 @@
                     "operator": "==",
                     "rightExpression": {
                       "expression": {
-                        "id": 2155,
+                        "id": 6985,
                         "name": "LibAsset",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2058,
-                        "src": "682:8:26",
+                        "referencedDeclaration": 5389,
+                        "src": "682:8:42",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_LibAsset_$2058_$",
+                          "typeIdentifier": "t_type$_t_contract$_LibAsset_$5389_$",
                           "typeString": "type(library LibAsset)"
                         }
                       },
-                      "id": 2156,
+                      "id": 6986,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "ERC1155_ASSET_CLASS",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1979,
-                      "src": "682:28:26",
+                      "referencedDeclaration": 5310,
+                      "src": "682:28:42",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes4",
                         "typeString": "bytes4"
                       }
                     },
-                    "src": "669:41:26",
+                    "src": "669:41:42",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 2162,
+                  "id": 6992,
                   "nodeType": "IfStatement",
-                  "src": "665:91:26",
+                  "src": "665:91:42",
                   "trueBody": {
-                    "id": 2161,
+                    "id": 6991,
                     "nodeType": "Block",
-                    "src": "712:44:26",
+                    "src": "712:44:42",
                     "statements": [
                       {
                         "expression": {
                           "expression": {
-                            "id": 2158,
+                            "id": 6988,
                             "name": "FeeSide",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2109,
-                            "src": "733:7:26",
+                            "referencedDeclaration": 6939,
+                            "src": "733:7:42",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_enum$_FeeSide_$2109_$",
+                              "typeIdentifier": "t_type$_t_enum$_FeeSide_$6939_$",
                               "typeString": "type(enum LibFeeSide.FeeSide)"
                             }
                           },
-                          "id": 2159,
+                          "id": 6989,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "lValueRequested": false,
                           "memberName": "LEFT",
                           "nodeType": "MemberAccess",
-                          "src": "733:12:26",
+                          "src": "733:12:42",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_FeeSide_$2109",
+                            "typeIdentifier": "t_enum$_FeeSide_$6939",
                             "typeString": "enum LibFeeSide.FeeSide"
                           }
                         },
-                        "functionReturnParameters": 2117,
-                        "id": 2160,
+                        "functionReturnParameters": 6947,
+                        "id": 6990,
                         "nodeType": "Return",
-                        "src": "726:19:26"
+                        "src": "726:19:42"
                       }
                     ]
                   }
@@ -603,18 +603,18 @@
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
                     },
-                    "id": 2166,
+                    "id": 6996,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 2163,
+                      "id": 6993,
                       "name": "rightClass",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2113,
-                      "src": "769:10:26",
+                      "referencedDeclaration": 6943,
+                      "src": "769:10:42",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes4",
                         "typeString": "bytes4"
@@ -624,76 +624,76 @@
                     "operator": "==",
                     "rightExpression": {
                       "expression": {
-                        "id": 2164,
+                        "id": 6994,
                         "name": "LibAsset",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2058,
-                        "src": "783:8:26",
+                        "referencedDeclaration": 5389,
+                        "src": "783:8:42",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_LibAsset_$2058_$",
+                          "typeIdentifier": "t_type$_t_contract$_LibAsset_$5389_$",
                           "typeString": "type(library LibAsset)"
                         }
                       },
-                      "id": 2165,
+                      "id": 6995,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "ERC1155_ASSET_CLASS",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1979,
-                      "src": "783:28:26",
+                      "referencedDeclaration": 5310,
+                      "src": "783:28:42",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes4",
                         "typeString": "bytes4"
                       }
                     },
-                    "src": "769:42:26",
+                    "src": "769:42:42",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 2171,
+                  "id": 7001,
                   "nodeType": "IfStatement",
-                  "src": "765:93:26",
+                  "src": "765:93:42",
                   "trueBody": {
-                    "id": 2170,
+                    "id": 7000,
                     "nodeType": "Block",
-                    "src": "813:45:26",
+                    "src": "813:45:42",
                     "statements": [
                       {
                         "expression": {
                           "expression": {
-                            "id": 2167,
+                            "id": 6997,
                             "name": "FeeSide",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2109,
-                            "src": "834:7:26",
+                            "referencedDeclaration": 6939,
+                            "src": "834:7:42",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_enum$_FeeSide_$2109_$",
+                              "typeIdentifier": "t_type$_t_enum$_FeeSide_$6939_$",
                               "typeString": "type(enum LibFeeSide.FeeSide)"
                             }
                           },
-                          "id": 2168,
+                          "id": 6998,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "lValueRequested": false,
                           "memberName": "RIGHT",
                           "nodeType": "MemberAccess",
-                          "src": "834:13:26",
+                          "src": "834:13:42",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_FeeSide_$2109",
+                            "typeIdentifier": "t_enum$_FeeSide_$6939",
                             "typeString": "enum LibFeeSide.FeeSide"
                           }
                         },
-                        "functionReturnParameters": 2117,
-                        "id": 2169,
+                        "functionReturnParameters": 6947,
+                        "id": 6999,
                         "nodeType": "Return",
-                        "src": "827:20:26"
+                        "src": "827:20:42"
                       }
                     ]
                   }
@@ -701,55 +701,55 @@
                 {
                   "expression": {
                     "expression": {
-                      "id": 2172,
+                      "id": 7002,
                       "name": "FeeSide",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2109,
-                      "src": "874:7:26",
+                      "referencedDeclaration": 6939,
+                      "src": "874:7:42",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_enum$_FeeSide_$2109_$",
+                        "typeIdentifier": "t_type$_t_enum$_FeeSide_$6939_$",
                         "typeString": "type(enum LibFeeSide.FeeSide)"
                       }
                     },
-                    "id": 2173,
+                    "id": 7003,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "lValueRequested": false,
                     "memberName": "NONE",
                     "nodeType": "MemberAccess",
-                    "src": "874:12:26",
+                    "src": "874:12:42",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_FeeSide_$2109",
+                      "typeIdentifier": "t_enum$_FeeSide_$6939",
                       "typeString": "enum LibFeeSide.FeeSide"
                     }
                   },
-                  "functionReturnParameters": 2117,
-                  "id": 2174,
+                  "functionReturnParameters": 6947,
+                  "id": 7004,
                   "nodeType": "Return",
-                  "src": "867:19:26"
+                  "src": "867:19:42"
                 }
               ]
             },
-            "id": 2176,
+            "id": 7006,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getFeeSide",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2114,
+              "id": 6944,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2111,
+                  "id": 6941,
                   "mutability": "mutable",
                   "name": "leftClass",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2176,
-                  "src": "194:16:26",
+                  "scope": 7006,
+                  "src": "194:16:42",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -757,10 +757,10 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 2110,
+                    "id": 6940,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
-                    "src": "194:6:26",
+                    "src": "194:6:42",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
@@ -770,12 +770,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 2113,
+                  "id": 6943,
                   "mutability": "mutable",
                   "name": "rightClass",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2176,
-                  "src": "212:17:26",
+                  "scope": 7006,
+                  "src": "212:17:42",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -783,10 +783,10 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 2112,
+                    "id": 6942,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
-                    "src": "212:6:26",
+                    "src": "212:6:42",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
@@ -795,64 +795,64 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "193:37:26"
+              "src": "193:37:42"
             },
             "returnParameters": {
-              "id": 2117,
+              "id": 6947,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2116,
+                  "id": 6946,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2176,
-                  "src": "254:7:26",
+                  "scope": 7006,
+                  "src": "254:7:42",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_FeeSide_$2109",
+                    "typeIdentifier": "t_enum$_FeeSide_$6939",
                     "typeString": "enum LibFeeSide.FeeSide"
                   },
                   "typeName": {
-                    "id": 2115,
+                    "id": 6945,
                     "name": "FeeSide",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2109,
-                    "src": "254:7:26",
+                    "referencedDeclaration": 6939,
+                    "src": "254:7:42",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_FeeSide_$2109",
+                      "typeIdentifier": "t_enum$_FeeSide_$6939",
                       "typeString": "enum LibFeeSide.FeeSide"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "253:9:26"
+              "src": "253:9:42"
             },
-            "scope": 2177,
-            "src": "174:719:26",
+            "scope": 7007,
+            "src": "174:719:42",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 2178,
-        "src": "110:785:26"
+        "scope": 7008,
+        "src": "110:785:42"
       }
     ],
-    "src": "33:863:26"
+    "src": "33:863:42"
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "@rarible/libraries/contracts/LibFeeSide.sol",
+      "absolutePath": "@rarible/transfer-manager/contracts/lib/LibFeeSide.sol",
       "exportedSymbols": {
         "LibAsset": [
-          2058
+          5389
         ],
         "LibFeeSide": [
-          2177
+          7007
         ]
       },
       "license": "MIT"
@@ -866,24 +866,24 @@
             ".6"
           ]
         },
-        "id": 2104,
+        "id": 6934,
         "name": "PragmaDirective",
-        "src": "33:22:26"
+        "src": "33:22:42"
       },
       {
         "attributes": {
-          "SourceUnit": 2059,
+          "SourceUnit": 5390,
           "absolutePath": "@rarible/lib-asset/contracts/LibAsset.sol",
           "file": "@rarible/lib-asset/contracts/LibAsset.sol",
-          "scope": 2178,
+          "scope": 7008,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 2105,
+        "id": 6935,
         "name": "ImportDirective",
-        "src": "57:51:26"
+        "src": "57:51:42"
       },
       {
         "attributes": {
@@ -897,10 +897,10 @@
           "contractKind": "library",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            2177
+            7007
           ],
           "name": "LibFeeSide",
-          "scope": 2178
+          "scope": 7008
         },
         "children": [
           {
@@ -913,30 +913,30 @@
                 "attributes": {
                   "name": "NONE"
                 },
-                "id": 2106,
+                "id": 6936,
                 "name": "EnumValue",
-                "src": "150:4:26"
+                "src": "150:4:42"
               },
               {
                 "attributes": {
                   "name": "LEFT"
                 },
-                "id": 2107,
+                "id": 6937,
                 "name": "EnumValue",
-                "src": "156:4:26"
+                "src": "156:4:42"
               },
               {
                 "attributes": {
                   "name": "RIGHT"
                 },
-                "id": 2108,
+                "id": 6938,
                 "name": "EnumValue",
-                "src": "162:5:26"
+                "src": "162:5:42"
               }
             ],
-            "id": 2109,
+            "id": 6939,
             "name": "EnumDefinition",
-            "src": "136:32:26"
+            "src": "136:32:42"
           },
           {
             "attributes": {
@@ -947,7 +947,7 @@
                 null
               ],
               "name": "getFeeSide",
-              "scope": 2177,
+              "scope": 7007,
               "stateMutability": "pure",
               "virtual": false,
               "visibility": "internal"
@@ -960,7 +960,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "leftClass",
-                      "scope": 2176,
+                      "scope": 7006,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bytes4",
@@ -972,21 +972,21 @@
                           "name": "bytes4",
                           "type": "bytes4"
                         },
-                        "id": 2110,
+                        "id": 6940,
                         "name": "ElementaryTypeName",
-                        "src": "194:6:26"
+                        "src": "194:6:42"
                       }
                     ],
-                    "id": 2111,
+                    "id": 6941,
                     "name": "VariableDeclaration",
-                    "src": "194:16:26"
+                    "src": "194:16:42"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "mutability": "mutable",
                       "name": "rightClass",
-                      "scope": 2176,
+                      "scope": 7006,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bytes4",
@@ -998,19 +998,19 @@
                           "name": "bytes4",
                           "type": "bytes4"
                         },
-                        "id": 2112,
+                        "id": 6942,
                         "name": "ElementaryTypeName",
-                        "src": "212:6:26"
+                        "src": "212:6:42"
                       }
                     ],
-                    "id": 2113,
+                    "id": 6943,
                     "name": "VariableDeclaration",
-                    "src": "212:17:26"
+                    "src": "212:17:42"
                   }
                 ],
-                "id": 2114,
+                "id": 6944,
                 "name": "ParameterList",
-                "src": "193:37:26"
+                "src": "193:37:42"
               },
               {
                 "children": [
@@ -1019,7 +1019,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "",
-                      "scope": 2176,
+                      "scope": 7006,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "enum LibFeeSide.FeeSide",
@@ -1029,22 +1029,22 @@
                       {
                         "attributes": {
                           "name": "FeeSide",
-                          "referencedDeclaration": 2109,
+                          "referencedDeclaration": 6939,
                           "type": "enum LibFeeSide.FeeSide"
                         },
-                        "id": 2115,
+                        "id": 6945,
                         "name": "UserDefinedTypeName",
-                        "src": "254:7:26"
+                        "src": "254:7:42"
                       }
                     ],
-                    "id": 2116,
+                    "id": 6946,
                     "name": "VariableDeclaration",
-                    "src": "254:7:26"
+                    "src": "254:7:42"
                   }
                 ],
-                "id": 2117,
+                "id": 6947,
                 "name": "ParameterList",
-                "src": "253:9:26"
+                "src": "253:9:42"
               },
               {
                 "children": [
@@ -1070,13 +1070,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 2111,
+                              "referencedDeclaration": 6941,
                               "type": "bytes4",
                               "value": "leftClass"
                             },
-                            "id": 2118,
+                            "id": 6948,
                             "name": "Identifier",
-                            "src": "277:9:26"
+                            "src": "277:9:42"
                           },
                           {
                             "attributes": {
@@ -1085,7 +1085,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "ETH_ASSET_CLASS",
-                              "referencedDeclaration": 1955,
+                              "referencedDeclaration": 5286,
                               "type": "bytes4"
                             },
                             "children": [
@@ -1094,29 +1094,29 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 2058,
+                                  "referencedDeclaration": 5389,
                                   "type": "type(library LibAsset)",
                                   "value": "LibAsset"
                                 },
-                                "id": 2119,
+                                "id": 6949,
                                 "name": "Identifier",
-                                "src": "290:8:26"
+                                "src": "290:8:42"
                               }
                             ],
-                            "id": 2120,
+                            "id": 6950,
                             "name": "MemberAccess",
-                            "src": "290:24:26"
+                            "src": "290:24:42"
                           }
                         ],
-                        "id": 2121,
+                        "id": 6951,
                         "name": "BinaryOperation",
-                        "src": "277:37:26"
+                        "src": "277:37:42"
                       },
                       {
                         "children": [
                           {
                             "attributes": {
-                              "functionReturnParameters": 2117
+                              "functionReturnParameters": 6947
                             },
                             "children": [
                               {
@@ -1134,33 +1134,33 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 2109,
+                                      "referencedDeclaration": 6939,
                                       "type": "type(enum LibFeeSide.FeeSide)",
                                       "value": "FeeSide"
                                     },
-                                    "id": 2122,
+                                    "id": 6952,
                                     "name": "Identifier",
-                                    "src": "337:7:26"
+                                    "src": "337:7:42"
                                   }
                                 ],
-                                "id": 2123,
+                                "id": 6953,
                                 "name": "MemberAccess",
-                                "src": "337:12:26"
+                                "src": "337:12:42"
                               }
                             ],
-                            "id": 2124,
+                            "id": 6954,
                             "name": "Return",
-                            "src": "330:19:26"
+                            "src": "330:19:42"
                           }
                         ],
-                        "id": 2125,
+                        "id": 6955,
                         "name": "Block",
-                        "src": "316:44:26"
+                        "src": "316:44:42"
                       }
                     ],
-                    "id": 2126,
+                    "id": 6956,
                     "name": "IfStatement",
-                    "src": "273:87:26"
+                    "src": "273:87:42"
                   },
                   {
                     "attributes": {},
@@ -1184,13 +1184,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 2113,
+                              "referencedDeclaration": 6943,
                               "type": "bytes4",
                               "value": "rightClass"
                             },
-                            "id": 2127,
+                            "id": 6957,
                             "name": "Identifier",
-                            "src": "373:10:26"
+                            "src": "373:10:42"
                           },
                           {
                             "attributes": {
@@ -1199,7 +1199,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "ETH_ASSET_CLASS",
-                              "referencedDeclaration": 1955,
+                              "referencedDeclaration": 5286,
                               "type": "bytes4"
                             },
                             "children": [
@@ -1208,29 +1208,29 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 2058,
+                                  "referencedDeclaration": 5389,
                                   "type": "type(library LibAsset)",
                                   "value": "LibAsset"
                                 },
-                                "id": 2128,
+                                "id": 6958,
                                 "name": "Identifier",
-                                "src": "387:8:26"
+                                "src": "387:8:42"
                               }
                             ],
-                            "id": 2129,
+                            "id": 6959,
                             "name": "MemberAccess",
-                            "src": "387:24:26"
+                            "src": "387:24:42"
                           }
                         ],
-                        "id": 2130,
+                        "id": 6960,
                         "name": "BinaryOperation",
-                        "src": "373:38:26"
+                        "src": "373:38:42"
                       },
                       {
                         "children": [
                           {
                             "attributes": {
-                              "functionReturnParameters": 2117
+                              "functionReturnParameters": 6947
                             },
                             "children": [
                               {
@@ -1248,33 +1248,33 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 2109,
+                                      "referencedDeclaration": 6939,
                                       "type": "type(enum LibFeeSide.FeeSide)",
                                       "value": "FeeSide"
                                     },
-                                    "id": 2131,
+                                    "id": 6961,
                                     "name": "Identifier",
-                                    "src": "434:7:26"
+                                    "src": "434:7:42"
                                   }
                                 ],
-                                "id": 2132,
+                                "id": 6962,
                                 "name": "MemberAccess",
-                                "src": "434:13:26"
+                                "src": "434:13:42"
                               }
                             ],
-                            "id": 2133,
+                            "id": 6963,
                             "name": "Return",
-                            "src": "427:20:26"
+                            "src": "427:20:42"
                           }
                         ],
-                        "id": 2134,
+                        "id": 6964,
                         "name": "Block",
-                        "src": "413:45:26"
+                        "src": "413:45:42"
                       }
                     ],
-                    "id": 2135,
+                    "id": 6965,
                     "name": "IfStatement",
-                    "src": "369:89:26"
+                    "src": "369:89:42"
                   },
                   {
                     "attributes": {},
@@ -1298,13 +1298,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 2111,
+                              "referencedDeclaration": 6941,
                               "type": "bytes4",
                               "value": "leftClass"
                             },
-                            "id": 2136,
+                            "id": 6966,
                             "name": "Identifier",
-                            "src": "471:9:26"
+                            "src": "471:9:42"
                           },
                           {
                             "attributes": {
@@ -1313,7 +1313,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "ERC20_ASSET_CLASS",
-                              "referencedDeclaration": 1963,
+                              "referencedDeclaration": 5294,
                               "type": "bytes4"
                             },
                             "children": [
@@ -1322,29 +1322,29 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 2058,
+                                  "referencedDeclaration": 5389,
                                   "type": "type(library LibAsset)",
                                   "value": "LibAsset"
                                 },
-                                "id": 2137,
+                                "id": 6967,
                                 "name": "Identifier",
-                                "src": "484:8:26"
+                                "src": "484:8:42"
                               }
                             ],
-                            "id": 2138,
+                            "id": 6968,
                             "name": "MemberAccess",
-                            "src": "484:26:26"
+                            "src": "484:26:42"
                           }
                         ],
-                        "id": 2139,
+                        "id": 6969,
                         "name": "BinaryOperation",
-                        "src": "471:39:26"
+                        "src": "471:39:42"
                       },
                       {
                         "children": [
                           {
                             "attributes": {
-                              "functionReturnParameters": 2117
+                              "functionReturnParameters": 6947
                             },
                             "children": [
                               {
@@ -1362,33 +1362,33 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 2109,
+                                      "referencedDeclaration": 6939,
                                       "type": "type(enum LibFeeSide.FeeSide)",
                                       "value": "FeeSide"
                                     },
-                                    "id": 2140,
+                                    "id": 6970,
                                     "name": "Identifier",
-                                    "src": "533:7:26"
+                                    "src": "533:7:42"
                                   }
                                 ],
-                                "id": 2141,
+                                "id": 6971,
                                 "name": "MemberAccess",
-                                "src": "533:12:26"
+                                "src": "533:12:42"
                               }
                             ],
-                            "id": 2142,
+                            "id": 6972,
                             "name": "Return",
-                            "src": "526:19:26"
+                            "src": "526:19:42"
                           }
                         ],
-                        "id": 2143,
+                        "id": 6973,
                         "name": "Block",
-                        "src": "512:44:26"
+                        "src": "512:44:42"
                       }
                     ],
-                    "id": 2144,
+                    "id": 6974,
                     "name": "IfStatement",
-                    "src": "467:89:26"
+                    "src": "467:89:42"
                   },
                   {
                     "attributes": {},
@@ -1412,13 +1412,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 2113,
+                              "referencedDeclaration": 6943,
                               "type": "bytes4",
                               "value": "rightClass"
                             },
-                            "id": 2145,
+                            "id": 6975,
                             "name": "Identifier",
-                            "src": "569:10:26"
+                            "src": "569:10:42"
                           },
                           {
                             "attributes": {
@@ -1427,7 +1427,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "ERC20_ASSET_CLASS",
-                              "referencedDeclaration": 1963,
+                              "referencedDeclaration": 5294,
                               "type": "bytes4"
                             },
                             "children": [
@@ -1436,29 +1436,29 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 2058,
+                                  "referencedDeclaration": 5389,
                                   "type": "type(library LibAsset)",
                                   "value": "LibAsset"
                                 },
-                                "id": 2146,
+                                "id": 6976,
                                 "name": "Identifier",
-                                "src": "583:8:26"
+                                "src": "583:8:42"
                               }
                             ],
-                            "id": 2147,
+                            "id": 6977,
                             "name": "MemberAccess",
-                            "src": "583:26:26"
+                            "src": "583:26:42"
                           }
                         ],
-                        "id": 2148,
+                        "id": 6978,
                         "name": "BinaryOperation",
-                        "src": "569:40:26"
+                        "src": "569:40:42"
                       },
                       {
                         "children": [
                           {
                             "attributes": {
-                              "functionReturnParameters": 2117
+                              "functionReturnParameters": 6947
                             },
                             "children": [
                               {
@@ -1476,33 +1476,33 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 2109,
+                                      "referencedDeclaration": 6939,
                                       "type": "type(enum LibFeeSide.FeeSide)",
                                       "value": "FeeSide"
                                     },
-                                    "id": 2149,
+                                    "id": 6979,
                                     "name": "Identifier",
-                                    "src": "632:7:26"
+                                    "src": "632:7:42"
                                   }
                                 ],
-                                "id": 2150,
+                                "id": 6980,
                                 "name": "MemberAccess",
-                                "src": "632:13:26"
+                                "src": "632:13:42"
                               }
                             ],
-                            "id": 2151,
+                            "id": 6981,
                             "name": "Return",
-                            "src": "625:20:26"
+                            "src": "625:20:42"
                           }
                         ],
-                        "id": 2152,
+                        "id": 6982,
                         "name": "Block",
-                        "src": "611:45:26"
+                        "src": "611:45:42"
                       }
                     ],
-                    "id": 2153,
+                    "id": 6983,
                     "name": "IfStatement",
-                    "src": "565:91:26"
+                    "src": "565:91:42"
                   },
                   {
                     "attributes": {},
@@ -1526,13 +1526,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 2111,
+                              "referencedDeclaration": 6941,
                               "type": "bytes4",
                               "value": "leftClass"
                             },
-                            "id": 2154,
+                            "id": 6984,
                             "name": "Identifier",
-                            "src": "669:9:26"
+                            "src": "669:9:42"
                           },
                           {
                             "attributes": {
@@ -1541,7 +1541,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "ERC1155_ASSET_CLASS",
-                              "referencedDeclaration": 1979,
+                              "referencedDeclaration": 5310,
                               "type": "bytes4"
                             },
                             "children": [
@@ -1550,29 +1550,29 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 2058,
+                                  "referencedDeclaration": 5389,
                                   "type": "type(library LibAsset)",
                                   "value": "LibAsset"
                                 },
-                                "id": 2155,
+                                "id": 6985,
                                 "name": "Identifier",
-                                "src": "682:8:26"
+                                "src": "682:8:42"
                               }
                             ],
-                            "id": 2156,
+                            "id": 6986,
                             "name": "MemberAccess",
-                            "src": "682:28:26"
+                            "src": "682:28:42"
                           }
                         ],
-                        "id": 2157,
+                        "id": 6987,
                         "name": "BinaryOperation",
-                        "src": "669:41:26"
+                        "src": "669:41:42"
                       },
                       {
                         "children": [
                           {
                             "attributes": {
-                              "functionReturnParameters": 2117
+                              "functionReturnParameters": 6947
                             },
                             "children": [
                               {
@@ -1590,33 +1590,33 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 2109,
+                                      "referencedDeclaration": 6939,
                                       "type": "type(enum LibFeeSide.FeeSide)",
                                       "value": "FeeSide"
                                     },
-                                    "id": 2158,
+                                    "id": 6988,
                                     "name": "Identifier",
-                                    "src": "733:7:26"
+                                    "src": "733:7:42"
                                   }
                                 ],
-                                "id": 2159,
+                                "id": 6989,
                                 "name": "MemberAccess",
-                                "src": "733:12:26"
+                                "src": "733:12:42"
                               }
                             ],
-                            "id": 2160,
+                            "id": 6990,
                             "name": "Return",
-                            "src": "726:19:26"
+                            "src": "726:19:42"
                           }
                         ],
-                        "id": 2161,
+                        "id": 6991,
                         "name": "Block",
-                        "src": "712:44:26"
+                        "src": "712:44:42"
                       }
                     ],
-                    "id": 2162,
+                    "id": 6992,
                     "name": "IfStatement",
-                    "src": "665:91:26"
+                    "src": "665:91:42"
                   },
                   {
                     "attributes": {},
@@ -1640,13 +1640,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 2113,
+                              "referencedDeclaration": 6943,
                               "type": "bytes4",
                               "value": "rightClass"
                             },
-                            "id": 2163,
+                            "id": 6993,
                             "name": "Identifier",
-                            "src": "769:10:26"
+                            "src": "769:10:42"
                           },
                           {
                             "attributes": {
@@ -1655,7 +1655,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "ERC1155_ASSET_CLASS",
-                              "referencedDeclaration": 1979,
+                              "referencedDeclaration": 5310,
                               "type": "bytes4"
                             },
                             "children": [
@@ -1664,29 +1664,29 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 2058,
+                                  "referencedDeclaration": 5389,
                                   "type": "type(library LibAsset)",
                                   "value": "LibAsset"
                                 },
-                                "id": 2164,
+                                "id": 6994,
                                 "name": "Identifier",
-                                "src": "783:8:26"
+                                "src": "783:8:42"
                               }
                             ],
-                            "id": 2165,
+                            "id": 6995,
                             "name": "MemberAccess",
-                            "src": "783:28:26"
+                            "src": "783:28:42"
                           }
                         ],
-                        "id": 2166,
+                        "id": 6996,
                         "name": "BinaryOperation",
-                        "src": "769:42:26"
+                        "src": "769:42:42"
                       },
                       {
                         "children": [
                           {
                             "attributes": {
-                              "functionReturnParameters": 2117
+                              "functionReturnParameters": 6947
                             },
                             "children": [
                               {
@@ -1704,37 +1704,37 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 2109,
+                                      "referencedDeclaration": 6939,
                                       "type": "type(enum LibFeeSide.FeeSide)",
                                       "value": "FeeSide"
                                     },
-                                    "id": 2167,
+                                    "id": 6997,
                                     "name": "Identifier",
-                                    "src": "834:7:26"
+                                    "src": "834:7:42"
                                   }
                                 ],
-                                "id": 2168,
+                                "id": 6998,
                                 "name": "MemberAccess",
-                                "src": "834:13:26"
+                                "src": "834:13:42"
                               }
                             ],
-                            "id": 2169,
+                            "id": 6999,
                             "name": "Return",
-                            "src": "827:20:26"
+                            "src": "827:20:42"
                           }
                         ],
-                        "id": 2170,
+                        "id": 7000,
                         "name": "Block",
-                        "src": "813:45:26"
+                        "src": "813:45:42"
                       }
                     ],
-                    "id": 2171,
+                    "id": 7001,
                     "name": "IfStatement",
-                    "src": "765:93:26"
+                    "src": "765:93:42"
                   },
                   {
                     "attributes": {
-                      "functionReturnParameters": 2117
+                      "functionReturnParameters": 6947
                     },
                     "children": [
                       {
@@ -1752,51 +1752,51 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 2109,
+                              "referencedDeclaration": 6939,
                               "type": "type(enum LibFeeSide.FeeSide)",
                               "value": "FeeSide"
                             },
-                            "id": 2172,
+                            "id": 7002,
                             "name": "Identifier",
-                            "src": "874:7:26"
+                            "src": "874:7:42"
                           }
                         ],
-                        "id": 2173,
+                        "id": 7003,
                         "name": "MemberAccess",
-                        "src": "874:12:26"
+                        "src": "874:12:42"
                       }
                     ],
-                    "id": 2174,
+                    "id": 7004,
                     "name": "Return",
-                    "src": "867:19:26"
+                    "src": "867:19:42"
                   }
                 ],
-                "id": 2175,
+                "id": 7005,
                 "name": "Block",
-                "src": "263:630:26"
+                "src": "263:630:42"
               }
             ],
-            "id": 2176,
+            "id": 7006,
             "name": "FunctionDefinition",
-            "src": "174:719:26"
+            "src": "174:719:42"
           }
         ],
-        "id": 2177,
+        "id": 7007,
         "name": "ContractDefinition",
-        "src": "110:785:26"
+        "src": "110:785:42"
       }
     ],
-    "id": 2178,
+    "id": 7008,
     "name": "SourceUnit",
-    "src": "33:863:26"
+    "src": "33:863:42"
   },
   "compiler": {
     "name": "solc",
     "version": "0.7.6+commit.7338295f.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.3",
-  "updatedAt": "2022-03-11T07:16:37.661Z",
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2022-08-04T07:15:50.853Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

@@ -44,18 +44,18 @@
     "absolutePath": "@rarible/exchange-interfaces/contracts/IERC20TransferProxy.sol",
     "exportedSymbols": {
       "IERC20TransferProxy": [
-        1559
+        4915
       ],
       "IERC20Upgradeable": [
-        1013
+        4369
       ]
     },
-    "id": 1560,
+    "id": 4916,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1545,
+        "id": 4901,
         "literals": [
           "solidity",
           ">=",
@@ -66,25 +66,25 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:31:16"
+        "src": "33:31:28"
       },
       {
-        "id": 1546,
+        "id": 4902,
         "literals": [
           "abicoder",
           "v2"
         ],
         "nodeType": "PragmaDirective",
-        "src": "65:19:16"
+        "src": "65:19:28"
       },
       {
         "absolutePath": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
         "file": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
-        "id": 1547,
+        "id": 4903,
         "nodeType": "ImportDirective",
-        "scope": 1560,
-        "sourceUnit": 1014,
-        "src": "86:79:16",
+        "scope": 4916,
+        "sourceUnit": 4370,
+        "src": "86:79:28",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -94,47 +94,47 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 1559,
+        "id": 4915,
         "linearizedBaseContracts": [
-          1559
+          4915
         ],
         "name": "IERC20TransferProxy",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "functionSelector": "776062c3",
-            "id": 1558,
+            "id": 4914,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "erc20safeTransferFrom",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1556,
+              "id": 4912,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1549,
+                  "id": 4905,
                   "mutability": "mutable",
                   "name": "token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1558,
-                  "src": "234:23:16",
+                  "scope": 4914,
+                  "src": "234:23:28",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IERC20Upgradeable_$1013",
+                    "typeIdentifier": "t_contract$_IERC20Upgradeable_$4369",
                     "typeString": "contract IERC20Upgradeable"
                   },
                   "typeName": {
-                    "id": 1548,
+                    "id": 4904,
                     "name": "IERC20Upgradeable",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 1013,
-                    "src": "234:17:16",
+                    "referencedDeclaration": 4369,
+                    "src": "234:17:28",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC20Upgradeable_$1013",
+                      "typeIdentifier": "t_contract$_IERC20Upgradeable_$4369",
                       "typeString": "contract IERC20Upgradeable"
                     }
                   },
@@ -142,12 +142,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 1551,
+                  "id": 4907,
                   "mutability": "mutable",
                   "name": "from",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1558,
-                  "src": "259:12:16",
+                  "scope": 4914,
+                  "src": "259:12:28",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -155,10 +155,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1550,
+                    "id": 4906,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "259:7:16",
+                    "src": "259:7:28",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -169,12 +169,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 1553,
+                  "id": 4909,
                   "mutability": "mutable",
                   "name": "to",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1558,
-                  "src": "273:10:16",
+                  "scope": 4914,
+                  "src": "273:10:28",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -182,10 +182,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1552,
+                    "id": 4908,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "273:7:16",
+                    "src": "273:7:28",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -196,12 +196,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 1555,
+                  "id": 4911,
                   "mutability": "mutable",
                   "name": "value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1558,
-                  "src": "285:13:16",
+                  "scope": 4914,
+                  "src": "285:13:28",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -209,10 +209,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1554,
+                    "id": 4910,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "285:7:16",
+                    "src": "285:7:28",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -221,36 +221,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "233:66:16"
+              "src": "233:66:28"
             },
             "returnParameters": {
-              "id": 1557,
+              "id": 4913,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "308:0:16"
+              "src": "308:0:28"
             },
-            "scope": 1559,
-            "src": "203:106:16",
+            "scope": 4915,
+            "src": "203:106:28",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 1560,
-        "src": "167:144:16"
+        "scope": 4916,
+        "src": "167:144:28"
       }
     ],
-    "src": "33:279:16"
+    "src": "33:279:28"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "@rarible/exchange-interfaces/contracts/IERC20TransferProxy.sol",
       "exportedSymbols": {
         "IERC20TransferProxy": [
-          1559
+          4915
         ],
         "IERC20Upgradeable": [
-          1013
+          4369
         ]
       },
       "license": "MIT"
@@ -268,9 +268,9 @@
             ".0"
           ]
         },
-        "id": 1545,
+        "id": 4901,
         "name": "PragmaDirective",
-        "src": "33:31:16"
+        "src": "33:31:28"
       },
       {
         "attributes": {
@@ -279,24 +279,24 @@
             "v2"
           ]
         },
-        "id": 1546,
+        "id": 4902,
         "name": "PragmaDirective",
-        "src": "65:19:16"
+        "src": "65:19:28"
       },
       {
         "attributes": {
-          "SourceUnit": 1014,
+          "SourceUnit": 4370,
           "absolutePath": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
           "file": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
-          "scope": 1560,
+          "scope": 4916,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 1547,
+        "id": 4903,
         "name": "ImportDirective",
-        "src": "86:79:16"
+        "src": "86:79:28"
       },
       {
         "attributes": {
@@ -310,10 +310,10 @@
           "contractKind": "interface",
           "fullyImplemented": false,
           "linearizedBaseContracts": [
-            1559
+            4915
           ],
           "name": "IERC20TransferProxy",
-          "scope": 1560
+          "scope": 4916
         },
         "children": [
           {
@@ -326,7 +326,7 @@
                 null
               ],
               "name": "erc20safeTransferFrom",
-              "scope": 1559,
+              "scope": 4915,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "external"
@@ -339,7 +339,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "token",
-                      "scope": 1558,
+                      "scope": 4914,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "contract IERC20Upgradeable",
@@ -349,24 +349,24 @@
                       {
                         "attributes": {
                           "name": "IERC20Upgradeable",
-                          "referencedDeclaration": 1013,
+                          "referencedDeclaration": 4369,
                           "type": "contract IERC20Upgradeable"
                         },
-                        "id": 1548,
+                        "id": 4904,
                         "name": "UserDefinedTypeName",
-                        "src": "234:17:16"
+                        "src": "234:17:28"
                       }
                     ],
-                    "id": 1549,
+                    "id": 4905,
                     "name": "VariableDeclaration",
-                    "src": "234:23:16"
+                    "src": "234:23:28"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "mutability": "mutable",
                       "name": "from",
-                      "scope": 1558,
+                      "scope": 4914,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -379,21 +379,21 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 1550,
+                        "id": 4906,
                         "name": "ElementaryTypeName",
-                        "src": "259:7:16"
+                        "src": "259:7:28"
                       }
                     ],
-                    "id": 1551,
+                    "id": 4907,
                     "name": "VariableDeclaration",
-                    "src": "259:12:16"
+                    "src": "259:12:28"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "mutability": "mutable",
                       "name": "to",
-                      "scope": 1558,
+                      "scope": 4914,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -406,21 +406,21 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 1552,
+                        "id": 4908,
                         "name": "ElementaryTypeName",
-                        "src": "273:7:16"
+                        "src": "273:7:28"
                       }
                     ],
-                    "id": 1553,
+                    "id": 4909,
                     "name": "VariableDeclaration",
-                    "src": "273:10:16"
+                    "src": "273:10:28"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "mutability": "mutable",
                       "name": "value",
-                      "scope": 1558,
+                      "scope": 4914,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -432,19 +432,19 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 1554,
+                        "id": 4910,
                         "name": "ElementaryTypeName",
-                        "src": "285:7:16"
+                        "src": "285:7:28"
                       }
                     ],
-                    "id": 1555,
+                    "id": 4911,
                     "name": "VariableDeclaration",
-                    "src": "285:13:16"
+                    "src": "285:13:28"
                   }
                 ],
-                "id": 1556,
+                "id": 4912,
                 "name": "ParameterList",
-                "src": "233:66:16"
+                "src": "233:66:28"
               },
               {
                 "attributes": {
@@ -453,32 +453,32 @@
                   ]
                 },
                 "children": [],
-                "id": 1557,
+                "id": 4913,
                 "name": "ParameterList",
-                "src": "308:0:16"
+                "src": "308:0:28"
               }
             ],
-            "id": 1558,
+            "id": 4914,
             "name": "FunctionDefinition",
-            "src": "203:106:16"
+            "src": "203:106:28"
           }
         ],
-        "id": 1559,
+        "id": 4915,
         "name": "ContractDefinition",
-        "src": "167:144:16"
+        "src": "167:144:28"
       }
     ],
-    "id": 1560,
+    "id": 4916,
     "name": "SourceUnit",
-    "src": "33:279:16"
+    "src": "33:279:28"
   },
   "compiler": {
     "name": "solc",
     "version": "0.7.6+commit.7338295f.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.3",
-  "updatedAt": "2022-03-11T07:16:37.644Z",
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2022-08-04T07:15:50.659Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
